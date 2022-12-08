@@ -1,8 +1,12 @@
 import React from 'react'
+import Name from '../../components/ComponentName'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+    <Name name={"hello"}/>
+    <div>Home Ibrohim</div>
+    </>
   )
 }
 
