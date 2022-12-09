@@ -1,9 +1,6 @@
 @import "../../assets/scss/variables.scss";
 
 .container{
-    margin: 0 auto;
-    padding: 50px 100px;
-
     h1{
         font-size: 40px;
         font-weight: 700;
@@ -21,11 +18,9 @@
         justify-content: center;
         gap: 20px;
         width: 100%;
-        flex-wrap: wrap;
         margin-top: 50px;
 
         .projects{
-            width: 600px;
             height: 387px;
             position: relative;
             border-radius: 10px;

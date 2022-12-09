@@ -6,7 +6,6 @@ import Contact from '../../components/Contacts'
 const Home = () => {
   return (
     <>
-    <Name name={"hello"}/>
     <Portfolio/>
     <Name name={"Contact"}/>
     <Contact/>
