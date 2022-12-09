@@ -20,7 +20,7 @@ const Inputs = ({
       }}>
         <img className='inputImg' src={icon} alt="" />
         <div className="input">
-          <div className="placemove">{placeholder}</div>
+          {/* <div className="placemove">{placeholder}</div> */}
           <input className='inputt' type={view ? "text" : password}
             icon={icon}
             border={border}
@@ -30,8 +30,8 @@ const Inputs = ({
             name={name}
             style={{
               width: width ? `${width}px` : `100%`,
-              height: height ? `${height}px` : `44px`,
-              paddingLeft: icon ? `30px` : "15px",
+              height: height ? `${height}px` : `60px`,
+              paddingLeft: icon ? `50px` : "15px",
               border: border ? `none` : `2px solid #79787A`,
               backgroundColor: background ? `${background}` : 'transparent'
             }} />
