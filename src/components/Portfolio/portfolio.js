@@ -1,5 +1,7 @@
+import { Button } from "antd";
 import React from "react";
 import "./portfolio.scss";
+import {ArrowRightOutlined } from '@ant-design/icons'
 
 
 const data = [
@@ -28,9 +30,7 @@ export default function Portfolio() {
                   <img src={v.img} alt="" />
                   <div className="demo">
                      <p>More</p>
-                     <button>
-                       <a href={v.url} target="_blank">a</a>
-                     </button>
+                    <Button type="link" block href={v.url} target="_blank" icon={<ArrowRightOutlined />}  />
                   </div>
                 </div>
 
