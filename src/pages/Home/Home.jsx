@@ -8,6 +8,7 @@ const Home = () => {
     <>
     <Name name={"hello"}/>
     <Portfolio/>
+    <Name name={"Contact"}/>
     <Contact/>
     </>
   )

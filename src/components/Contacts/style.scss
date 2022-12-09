@@ -1,8 +1,60 @@
 .contactWrapper{
-    background: url();
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 0;
+    transition: all 0.3s;
+    height: 749px;
+    overflow: hidden;
+    .arrowTopWrapper{
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        border: 1px solid #000000 ;
+        border-radius: 50px;
+        img{
+            padding: 20px;
+        }
+        &:active{
+            opacity: 0.5;
+        }
+    }
+    .img{
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+    }
     .contactColumns{
+        z-index: 999;
         display: flex;
         justify-content: flex-start;
+        background-color: transparent;
+        gap: 30px;
         // align-items: center;
+        .contactColumnText{
+            font-weight: 500;
+font-size: 26px;
+line-height: 31px;
+        }
+        :where(.css-dev-only-do-not-override-1i536d8).ant-input-textarea-show-count >.ant-input{
+            background-color: transparent;
+        }
+        div{
+            z-index: 999;
+        }
+        .inputs{
+            padding: 50px 0;
+            z-index: 999;
+            position: relative;
+            .btnAbsolute{
+                position: absolute;
+                right: 10px;
+                bottom: 60px;
+            }
+            .btn{
+                margin-top: 20px;
+            }
+        }
     }
 }
