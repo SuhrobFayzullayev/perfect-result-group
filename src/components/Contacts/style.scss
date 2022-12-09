@@ -8,8 +8,8 @@
     height: 749px;
     overflow: hidden;
     .arrowTopWrapper{
-        position: absolute;
-        bottom: 50px;
+        position: fixed;
+        bottom: 100px;
         right: 50px;
         border: 1px solid #000000 ;
         border-radius: 50px;

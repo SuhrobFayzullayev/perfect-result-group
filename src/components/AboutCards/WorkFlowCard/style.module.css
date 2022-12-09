@@ -1,0 +1,84 @@
+.container {
+  margin: 0 auto;
+}
+
+.container .cardWrapper {
+  max-width: 540px;
+  min-width: 420px;
+  background: #ffffff;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 20px;
+  margin: 15px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.container .cardWrapper:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-filter: none;
+          filter: none;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+}
+
+.container .cardWrapper .line {
+  background: #000000;
+  opacity: 0.5;
+  width: 1px;
+  height: 117px;
+}
+
+.container .cardWrapper .title .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.container .cardWrapper .title .description h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.container .cardWrapper .title .description .circle {
+  border: 1px solid #000000;
+  width: 35px;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+}
+
+.container .cardWrapper .title p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+  opacity: 0.7;
+}
+/*# sourceMappingURL=style.module.css.map */
