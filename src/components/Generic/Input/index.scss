@@ -4,11 +4,15 @@
 .inputImg{
     width: 20px;
     position: absolute;
-    top: 14px;
-    left: 5px;
+    top: 18px;
+    left: 15px;
+    path{
+        fill: black;
+    }
 }
 .input{
     width: 100%;
+    
     &:focus-within .placemove{
         transition: all 2s;
         position: absolute;

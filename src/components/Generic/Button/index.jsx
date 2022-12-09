@@ -19,7 +19,7 @@ const Button = ({
         onClick={onClick}
         style={{
           gap: img ? `8px` : "0",
-          height: height ? `${height}px` : `44px`,
+          height: height ? `${height}px` : `60px`,
           maxWidth: width ? `${width}px` : "128px",
           minWidth: "128px",
           width: `100%`,
