@@ -1,12 +1,12 @@
 import React from 'react'
 import Name from '../../components/ComponentName'
-import Portfolio from '../../components/Portfolio/portfolio'
 import Contact from '../../components/Contacts'
+import HomePortfolio from '../../components/Portfolio/homePortfolio'
 
 const Home = () => {
   return (
     <>
-    <Portfolio/>
+    <HomePortfolio/>
     <Name name={"Contact"}/>
     <Contact/>
     </>
