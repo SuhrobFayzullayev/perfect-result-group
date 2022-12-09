@@ -20,10 +20,10 @@ const Contact = () => {
           <div>
             <div className="contactColumnText">Leave us a message</div>
             <div className="inputs">
-              <Inputs width={445} name={"Email"} />
+              <Inputs width={445} placeholder={"Email"} />
             </div>
             <div className="inputs">
-              <Inputs width={445} name={"Phone number"} />
+              <Inputs width={445} placeholder={"Phone number"} />
             </div>
             <div className="inputs">
               <TextArea
@@ -42,18 +42,18 @@ const Contact = () => {
             </div>
           </div>
           <div>
-            <div className="contactColumnText">informative</div>
+            <div className="contactColumnText">Informative</div>
             <div className="inputs">
-              <Inputs icon={location} width={445}/>
+              <Inputs icon={location} width={445} placeholder={"Location"} />
               <div className="btnAbsolute">
-              <Button background={'black'} color={'white'} txt={"Map"} height={38} width={96}/>
+              <Button background={'black'}  color={'white'} txt={"Map"} height={38} width={96}/>
               </div>
             </div>
             <div className="inputs">
-              <Inputs icon={phone} width={445}/>
+              <Inputs icon={phone} placeholder={"Phone number"}  width={445}/>
             </div>
             <div className="inputs">
-              <Inputs icon={email} width={445}/>
+              <Inputs icon={email} placeholder={"Email"}  width={445}/>
             <div className="btn">
             <Button background={'black'} color={'white'} width={445} txt={"Submit"}  />
             </div>
