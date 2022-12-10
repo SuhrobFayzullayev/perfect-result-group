@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+  }
+  .team_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+  }
+}
+.title {
+  display: flex;
+  justify-content: center;
+  color: rgba(43, 19, 187, 1);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  padding-bottom: 20px;
+  margin: 40px 0;
+  line-height: 49px;
+  border-bottom: 2px solid rgba(43, 19, 187, 1);
+}
