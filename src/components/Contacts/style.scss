@@ -3,7 +3,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    padding: 90px 0;
+    transition: all 0.3s;
+    height: 749px;
+    overflow: hidden;
+    .arrowTopWrapper{
+        position: fixed;
+        bottom: 100px;
+        right: 50px;
+        border: 1px solid #000000 ;
+        border-radius: 50px;
+        img{
+            padding: 20px;
+        }
+        &:active{
+            opacity: 0.5;
+        }
+    }
     .img{
         position: absolute;
         width: 100%;
