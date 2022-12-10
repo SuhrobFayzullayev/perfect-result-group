@@ -59,10 +59,14 @@ const Contact = () => {
               </div>
             </div>
             <div className="inputs">
-              <Inputs icon={phone} placeholder={"Phone number"}  width={445}/>
+            <a href="tel:+998 90 111 11 11">
+              <Button icon={email} color={'black'} border={'2px solid grey'} txt={"+998 90 111 11 11"} width={445}/>
+              </a>
             </div>
             <div className="inputs">
-              <Inputs icon={email} placeholder={"Email"}  width={445}/>
+              <a href="mailto:abdurashidovibrohim@gmail.com" target="blank">
+              <Button icon={email} color={'black'} border={'2px solid grey'} txt={"abdurashidovibrohim@gmail.com"} width={445}/>
+              </a>
             <div className="btn">
             <Button background={'black'} color={'white'} width={445} txt={"Submit"}  />
             </div>
