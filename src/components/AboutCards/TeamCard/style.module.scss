@@ -42,7 +42,6 @@
   }
 
   &:hover {
-    transition: all 0.5s ease;
     background: linear-gradient(
       0.83deg,
       #000000 42.59%,
@@ -51,21 +50,28 @@
       rgba(0, 0, 0, 0.6) 85.26%,
       rgba(0, 0, 0, 0.05) 100.62%
     );
+    transition: all 1s ease;
 
-    > .hide {
-      transform: translateY(-10px);
+    .hide {
       opacity: 1;
-      color: #fff;
+      transform: translateY(-10px);
+      p {
+        color: #fff;
+        transition: all 0.3s ease;
+      }
     }
     h5 {
       transform: translateY(-10px);
+      transition: all 0.3s ease;
       color: #fff;
     }
     p {
+      transition: all 0.3s ease;
       transform: translateY(-15px);
       color: #fff;
     }
     span {
+      transition: all 0.3s ease;
       color: #fff;
       transform: translateY(10px);
     }

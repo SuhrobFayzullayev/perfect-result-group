@@ -51,31 +51,42 @@
 }
 
 .wrapper:hover {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   background: linear-gradient(0.83deg, #000000 42.59%, rgba(0, 0, 0, 0.9) 56.93%, rgba(0, 0, 0, 0.8) 72.83%, rgba(0, 0, 0, 0.6) 85.26%, rgba(0, 0, 0, 0.05) 100.62%);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
-.wrapper:hover > .hide {
+.wrapper:hover .hide {
+  opacity: 1;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
-  opacity: 1;
+}
+
+.wrapper:hover .hide p {
   color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .wrapper:hover h5 {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   color: #fff;
 }
 
 .wrapper:hover p {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   -webkit-transform: translateY(-15px);
           transform: translateY(-15px);
   color: #fff;
 }
 
 .wrapper:hover span {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   color: #fff;
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
