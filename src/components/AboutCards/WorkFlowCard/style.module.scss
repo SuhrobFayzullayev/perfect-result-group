@@ -1,0 +1,45 @@
+.cardWrapper {
+  max-width: 540px;
+  min-width: 420px;
+  background: #ffffff;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  margin: 15px;
+  filter: grayscale(1);
+
+  &:hover {
+    transition: all 0.3s ease;
+    filter: none;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+  }
+
+  .line {
+    background: #000000;
+    opacity: 0.5;
+    width: 1px;
+    height: 117px;
+  }
+  .title {
+    .description {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+
+      .circle {
+        border: 1px solid #000000;
+        width: 35px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+      }
+    }
+  }
+}

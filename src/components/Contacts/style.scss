@@ -1,44 +1,45 @@
-.contactWrapper{
-    position: relative;
+.contactWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  .img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+  .contactColumns {
+    z-index: 999;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    .img{
+    justify-content: flex-start;
+    background-color: transparent;
+    gap: 30px;
+    // align-items: center;
+    .contactColumnText {
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 31px;
+    }
+    :where(.css-dev-only-do-not-override-1i536d8).ant-input-textarea-show-count
+      > .ant-input {
+      background-color: transparent;
+    }
+    div {
+      z-index: 999;
+    }
+    .inputs {
+      padding: 50px 0;
+      z-index: 999;
+      position: relative;
+      .btnAbsolute {
         position: absolute;
-        width: 100%;
-        z-index: -1;
+        right: 10px;
+        bottom: 60px;
+      }
+      .btn {
+        margin-top: 20px;
+      }
     }
-    .contactColumns{
-        z-index: 999;
-        display: flex;
-        justify-content: flex-start;
-        background-color: transparent;
-        gap: 30px;
-        // align-items: center;
-        .contactColumnText{
-            font-weight: 500;
-font-size: 26px;
-line-height: 31px;
-        }
-        :where(.css-dev-only-do-not-override-1i536d8).ant-input-textarea-show-count >.ant-input{
-            background-color: transparent;
-        }
-        div{
-            z-index: 999;
-        }
-        .inputs{
-            padding: 50px 0;
-            z-index: 999;
-            position: relative;
-            .btnAbsolute{
-                position: absolute;
-                right: 10px;
-                bottom: 60px;
-            }
-            .btn{
-                margin-top: 20px;
-            }
-        }
-    }
+  }
 }
