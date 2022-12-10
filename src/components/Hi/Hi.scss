@@ -1,5 +1,6 @@
 .hi {
-    background: #dbdbdb;
+    background: #f5f5f5;
+    padding-bottom: 150px;
 }
 
 .title {
@@ -19,13 +20,13 @@
     }
     &::before {
         border-top: 82px solid transparent;
-        border-left: 50vw solid #dbdbdb;
+        border-left: 50vw solid #f5f5f5;
         left: 0;
         bottom: 0;
     }
     &::after {
         border-top: 82px solid transparent;
-        border-right: 50vw solid #dbdbdb;
+        border-right: 50vw solid #f5f5f5;
         right: 0;
         bottom: 0;
     }
