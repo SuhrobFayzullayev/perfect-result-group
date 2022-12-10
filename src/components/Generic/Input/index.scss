@@ -1,0 +1,47 @@
+.inputWrapper{
+    display: flex;
+    position: relative;
+.inputImg{
+    width: 20px;
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    path{
+        fill: black;
+    }
+}
+.input{
+    width: 100%;
+    
+    &:focus-within .placemove{
+        transition: all 2s;
+        position: absolute;
+        top: -10px;
+        z-index: 999;
+        position: absolute;
+        display: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: red;
+        transform: scale(0.7);
+    }
+    .inputt{
+        border-radius: 15px;
+        // background: url('src/assets/icons/svg/Settings.svg') no-repeat scroll 7px 7px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        z-index: 888;
+        transition: all 0.5s;
+&:focus{
+    outline: none;
+    border: 2px solid #0061DF;
+}
+    }
+}
+}

@@ -1,7 +1,17 @@
 @import "./assets/scss/index.scss";
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Montserrat;
+    font-family: 'Motserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+// bu globalWrapper pagelarda eng katta konteynerga chaqiriladi 
+.globalWrapper{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 130px;
 }
