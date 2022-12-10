@@ -36,8 +36,7 @@
   line-height: 31px;
 }
 
-.contactWrapper .contactColumns :where(.css-dev-only-do-not-override-1i536d8).ant-input-textarea-show-count
-> .ant-input {
+.contactWrapper .contactColumns :where(.css-dev-only-do-not-override-1i536d8).ant-input-textarea-show-count > .ant-input {
   background-color: transparent;
 }
 
