@@ -5,8 +5,7 @@ import Contact from '../../components/Contacts'
 const Home = () => {
   return (
     <>
-    <Name name={"hello"}/>
-    <div>Home Ibrohim</div>
+    <Name name={"Contact"}/>
     <Contact/>
     </>
   )
