@@ -1,6 +1,6 @@
 import React from "react";
 import "./Client.scss";
-import ClientImg from "./uzcard.png";
+import ClientImg from "./../../assets/img/clientCardImg.png";
 function Client() {
   const data = [
     {
