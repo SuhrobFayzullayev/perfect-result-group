@@ -28,7 +28,7 @@ const Contact = () => {
               <Inputs width={445} placeholder={"Email"} />
             </div>
             <div className="inputs">
-              <Inputs width={445} placeholder={"Phone number"} />
+              <Inputs masked={true} width={445} placeholder={"Phone number"} />
             </div>
             <div className="inputs">
               <TextArea
@@ -49,8 +49,8 @@ const Contact = () => {
           <div>
             <div className="contactColumnText">Informative</div>
             <div className="inputs">
-              <Inputs icon={location} width={445} placeholder={"Location"} />
-              <div className="btnAbsolute">
+              <Button  icon={location} color={'black'} border={'2px solid grey'} txt={"Tashkent city chilanzar 1"} width={445} />
+              <div className="btnAbsolute">       
               <a 
             href="https://www.google.com/maps/place/%D0%A7%D0%B8%D0%BB%D0%B0%D0%BD%D0%B7%D0%B0%D1%80-3,+%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82+100115,+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/@41.2844818,69.2188239,16z/data=!3m1!4b1!4m5!3m4!1s0x38ae8a45cc5c3f35:0x929c69dffb5b8141!8m2!3d41.2855934!4d69.223683"
             target="blank">
@@ -60,7 +60,7 @@ const Contact = () => {
             </div>
             <div className="inputs">
             <a href="tel:+998 90 111 11 11">
-              <Button icon={email} color={'black'} border={'2px solid grey'} txt={"+998 90 111 11 11"} width={445}/>
+              <Button icon={phone} color={'black'} border={'2px solid grey'} txt={"+998 90 111 11 11"} width={445}/>
               </a>
             </div>
             <div className="inputs">
