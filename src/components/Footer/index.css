@@ -1,0 +1,531 @@
+footer {
+  width: 100%;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer_top {
+  width: 100%;
+  background-color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px calc((100% - 1110px) / 2);
+  border-bottom: 2px solid #d9d9d9;
+}
+
+footer .footer_top .left_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 16px;
+}
+
+footer .footer_top .left_footer .for_logo {
+  width: 77px;
+  height: 67px;
+}
+
+footer .footer_top .left_footer .for_logo .image {
+  width: 100%;
+  height: 67px;
+  background-color: #ffffff;
+  border-radius: 73px;
+}
+
+footer .footer_top .left_footer .for_company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100%;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer .footer_top .left_footer .for_company span {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(45.83%, #2b13bb), color-stop(83.85%, #ffffff));
+  background: linear-gradient(180deg, #2b13bb 45.83%, #ffffff 83.85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+footer .footer_top .right_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 41px;
+}
+
+footer .footer_top .right_footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer .footer_top .right_footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 35px;
+}
+
+footer .footer_top .right_footer nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer_top .right_footer nav ul li a {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+footer .footer_top .right_footer nav ul li a::before {
+  display: none;
+  content: "";
+  position: absolute;
+  top: calc(100% + 4px);
+  width: calc(100% + 10px);
+  left: -3px;
+  bottom: 4px;
+  height: 5px;
+  border-radius: 5px;
+  background: linear-gradient(270.11deg, #4542ff 30.39%, #ffffff 81.42%);
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+footer .footer_top .right_footer nav ul li a:hover {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+footer .footer_top .right_footer nav ul li a:hover::before {
+  display: block;
+}
+
+footer .footer_top .right_footer .for_social_media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 25px;
+}
+
+footer .footer_top .right_footer .for_social_media .image {
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+footer .footer_bottom {
+  width: 100%;
+  padding: 30px calc((100% - 1110px) / 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+
+footer .footer_bottom > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-right: 38px;
+  border-right: 2px solid #d9d9d9;
+}
+
+footer .footer_bottom > div:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+footer .footer_bottom > div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-decoration: none;
+}
+
+footer .footer_bottom > div a .for_image {
+  width: 26px;
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer_bottom > div a pre {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+footer .footer_bottom > div a .for_map {
+  margin-left: 15px;
+  width: 77px;
+  height: 38px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 2px rgba(255, 255, 255, 0.15);
+          box-shadow: 0px 2px 2px rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer_bottom > div a .for_map button {
+  width: 73px;
+  height: 34px;
+  border: 0.5px solid #000000;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #000000;
+}
+
+@media (max-width: 1460px) {
+  footer .footer_top {
+    padding: 30px 165px;
+  }
+  footer .footer_bottom {
+    padding: 30px 165px;
+  }
+}
+
+@media (max-width: 1400px) {
+  footer .footer_top .right_footer nav ul {
+    gap: 15px;
+  }
+  footer .footer_top .right_footer .for_social_media {
+    gap: 10px;
+  }
+  footer .footer_bottom {
+    gap: 5px;
+  }
+  footer .footer_bottom > div {
+    padding-right: 15px;
+  }
+  footer .footer_bottom > div pre {
+    font-size: 17px;
+  }
+  footer .footer_bottom > div .for_map {
+    margin-left: 7px;
+    width: 60px;
+  }
+  footer .footer_bottom > div .for_map button {
+    width: 56px;
+  }
+}
+
+@media (max-width: 1335px) {
+  footer .footer_bottom > div {
+    padding-right: 7px;
+  }
+  footer .footer_bottom > div a .for_map {
+    margin-left: 8px;
+  }
+  footer .footer_bottom > div a pre {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 1280px) {
+  footer .footer_top {
+    padding: 30px 100px;
+  }
+  footer .footer_bottom {
+    padding: 30px 100px;
+  }
+}
+
+@media (max-width: 1210px) {
+  footer .footer_bottom > div a .for_map {
+    width: 60px;
+    margin-left: 8px;
+  }
+  footer .footer_bottom > div a .for_map button {
+    width: 56px;
+  }
+  footer .footer_bottom > div a pre {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1150px) {
+  footer .footer_top .left_footer .for_company {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1100px) {
+  footer .footer_top {
+    padding: 20px 25px;
+  }
+  footer .footer_bottom {
+    padding: 20px 25px;
+  }
+}
+
+@media (max-width: 950px) {
+  footer .footer_top .right_footer nav {
+    display: none;
+  }
+  footer .footer_top .right_footer .for_social_media {
+    gap: 20px;
+  }
+  footer .footer_bottom {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  footer .footer_bottom > div {
+    padding-right: 0;
+    border-right: 0;
+  }
+  footer .footer_bottom > div:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  footer .footer_bottom > div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media (max-width: 832px) {
+  footer .footer_top {
+    padding: 20px 10px;
+  }
+  footer .footer_bottom {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  footer .footer_bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 7px;
+  }
+}
+
+@media (max-width: 530px) {
+  footer .footer_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 15px;
+  }
+  footer .footer_top .right_footer .for_social_media {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  footer .footer_top .left_footer .for_logo {
+    width: 45px;
+    height: 45px;
+  }
+  footer .footer_top .left_footer .for_logo svg {
+    width: 100%;
+    height: 100%;
+  }
+  footer .footer_top .left_footer .for_company {
+    font-size: 30px;
+  }
+  footer .footer_bottom > div a .for_image {
+    width: 15px;
+    height: 15px;
+  }
+  footer .footer_bottom > div a .for_image svg {
+    width: 100%;
+    height: 100%;
+  }
+  footer .footer_bottom > div a pre {
+    font-size: 16px;
+  }
+  footer .footer_bottom > div a .for_map {
+    width: 45px;
+    height: 30px;
+    border-radius: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .footer_bottom > div a .for_map button {
+    font-size: 14px;
+    width: 42px;
+    height: 28px;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  footer .footer_bottom > div a pre {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
