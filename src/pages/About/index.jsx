@@ -121,12 +121,12 @@ const About = () => {
             return <WorkFlowCard info={info} key={index} />;
           })}
         </div>
-      </div>{" "}
+      </div>
       <div className={styles.title}>
         <h1>About Team</h1>
       </div>
       <div className={styles.wrapper}>
-        <div className={styles.team_container }>
+        <div className={styles.team_container}>
           {info.map((item, index) => {
             return <TeamCard item={item} key={index} />;
           })}
