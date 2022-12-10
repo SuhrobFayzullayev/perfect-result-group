@@ -8,7 +8,6 @@ import location from './../../assets/icon/location.svg'
 import phone from './../../assets/icon/call.svg'
 import email from './../../assets/icon/email.svg'
 import arrowTop from './../../assets/icon/arrowTop.svg'
-import Yandex from "../Maps";
 const Contact = () => {
   const { TextArea } = Input;
   const onChange = (e) => {
