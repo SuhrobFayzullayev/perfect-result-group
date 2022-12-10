@@ -7,10 +7,15 @@ import { Input } from "antd";
 import location from './../../assets/icon/location.svg'
 import phone from './../../assets/icon/call.svg'
 import email from './../../assets/icon/email.svg'
+import arrowTop from './../../assets/icon/arrowTop.svg'
+import Yandex from "../Maps";
 const Contact = () => {
   const { TextArea } = Input;
   const onChange = (e) => {
     console.log("Change:", e.target.value);
+  };
+  const scrol = () => {
+    document.documentElement.scrollTop = 0;
   };
   return (
     <>
@@ -46,7 +51,11 @@ const Contact = () => {
             <div className="inputs">
               <Inputs icon={location} width={445} placeholder={"Location"} />
               <div className="btnAbsolute">
-              <Button background={'black'}  color={'white'} txt={"Map"} height={38} width={96}/>
+              <a 
+            href="https://www.google.com/maps/place/%D0%A7%D0%B8%D0%BB%D0%B0%D0%BD%D0%B7%D0%B0%D1%80-3,+%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82+100115,+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/@41.2844818,69.2188239,16z/data=!3m1!4b1!4m5!3m4!1s0x38ae8a45cc5c3f35:0x929c69dffb5b8141!8m2!3d41.2855934!4d69.223683"
+            target="blank">
+              <Button background={'black'} color={'white'} txt={"Map"} height={38} width={96}/>
+              </a>
               </div>
             </div>
             <div className="inputs">
@@ -59,6 +68,9 @@ const Contact = () => {
             </div>
             </div>
           </div>
+        </div>
+        <div onClick={()=>scrol()} className="arrowTopWrapper">
+        <img src={arrowTop} alt="" />
         </div>
       </div>
     </>
