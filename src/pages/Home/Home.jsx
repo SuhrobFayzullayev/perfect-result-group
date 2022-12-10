@@ -1,16 +1,20 @@
-import React from 'react'
-import Name from '../../components/ComponentName'
-import Portfolio from '../../components/Portfolio/portfolio'
-import Contact from '../../components/Contacts'
+import React from "react";
+import Client from "../../components/Client/Client";
+import Hi from "../../components/Hi/Hi";
+import Name from "../../components/ComponentName";
+import Portfolio from "../../components/Portfolio/portfolio";
+import Contact from "../../components/Contacts";
 
 const Home = () => {
   return (
     <>
-    <Portfolio/>
-    <Name name={"Contact"}/>
-    <Contact/>
+      <Hi isAbout={false} />
+      <Portfolio />
+      <Client />
+      <Name name={"Contact"} />
+      <Contact />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
