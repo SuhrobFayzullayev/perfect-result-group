@@ -4,6 +4,7 @@ import cardImage from "../../assets/img/cardImage.png";
 import teamImage from "../../assets/img/TeamImage.png";
 import TeamCard from "../../components/AboutCards/TeamCard";
 import WorkFlowCard from "../../components/AboutCards/WorkFlowCard";
+import Hi from "../../components/Hi/Hi";
 
 const About = () => {
   const data = [
@@ -112,6 +113,7 @@ const About = () => {
 
   return (
     <>
+      <Hi isAbout={true} />
       <div className={styles.title}>
         <h1>About Workflow</h1>
       </div>

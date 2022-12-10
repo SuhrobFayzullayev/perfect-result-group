@@ -3,7 +3,7 @@ import styles from "./style.module.scss";
 
 const WorkFlowCard = ({ info }) => {
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.cardWrapper}>
         <div className={styles.imageWrapper}>
           <img src={info.image} alt="Card image" />
