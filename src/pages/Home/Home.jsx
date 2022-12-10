@@ -8,9 +8,9 @@ import Contact from "../../components/Contacts";
 const Home = () => {
   return (
     <>
-      <Hi isAbout={true} />
-      <Client />
+      <Hi isAbout={false} />
       <Portfolio />
+      <Client />
       <Name name={"Contact"} />
       <Contact />
     </>
