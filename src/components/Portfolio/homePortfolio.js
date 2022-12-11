@@ -15,7 +15,7 @@ const data = [
   },
 ];
 
-export default function Portfolio() {
+export default function HomePortfolio() {
   return (
     <>
       <Name name={"Portfolio"} />
