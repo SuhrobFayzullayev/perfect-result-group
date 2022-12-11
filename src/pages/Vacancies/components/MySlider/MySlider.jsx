@@ -1,6 +1,5 @@
-import { Carousel } from "antd";
 import React from "react";
-
+import "./MySlider.scss";
 function MySlider() {
   const data = [
     {
@@ -41,7 +40,46 @@ function MySlider() {
 
   return (
     <div className="slider__wapper">
-      <div className="slider">slider</div>
+      <div className="slider">
+        {data.length > 0 &&
+          data.map((item) => {
+            return (
+              <div key={item.id} className="card">
+                <div className="card__title">{item.name}</div>
+                <div className="card__info">
+                  <strong>Office:</strong> <span>{item.office}</span>
+                </div>
+                <div className="card__info">
+                  <strong>Technology:</strong> <span>{item.technology}</span>
+                </div>
+                <div className="card__info">
+                  <strong>TechnologyTelegram:</strong>{" "}
+                  <span>{item.telegram}</span>
+                </div>
+                <div className="card__info">
+                  <strong>Area:</strong> <span>{item.area}</span>
+                </div>
+                <div className="card__info">
+                  <strong>Application time:</strong>{" "}
+                  <span>{item.applicationTime}</span>
+                </div>
+                <div className="card__info">
+                  <strong>Working time:</strong>
+                  <span>
+                    {item.workingTime.from} - {item.workingTime.to}{" "}
+                    {item.workingTime.days}
+                  </span>
+                </div>
+                <div className="card__info">
+                  <strong>Salary:</strong>
+                  <span>
+                    {item.salary.from} - {item.salary.to}
+                  </span>
+                </div>
+              </div>
+            );
+          })}
+      </div>
     </div>
   );
 }
