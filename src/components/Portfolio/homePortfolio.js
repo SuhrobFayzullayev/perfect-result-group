@@ -10,14 +10,14 @@ const data = [
     url: "https://reactprojec-1.netlify.app/",
   },
   {
-    img: "https://www.linkpicture.com/q/project2_2.jpg",
+    img: "https://www.linkpicture.com/q/project1_5.jpg",
     url: "https://taskstyled.netlify.app/",
   },
 ];
 
 export default function HomePortfolio() {
   return (
-    <>
+    <section id="section">
       <Name name={"Portfolio"} />
 
       <div className="container component_name globalWrapper">
@@ -39,6 +39,6 @@ export default function HomePortfolio() {
           ))}
         </div>
       </div>
-    </>
+    </section>
   );
 }
