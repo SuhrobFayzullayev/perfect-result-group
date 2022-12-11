@@ -56,7 +56,7 @@ const Header = () => {
                 <Link>Services</Link>
               </li>
               <li>
-                <Link>Vacancies</Link>
+                <Link to="/vacancies">Vacancies</Link>
               </li>
               <div className="mobile_content">
                 <a href="tel:+998936843757">
