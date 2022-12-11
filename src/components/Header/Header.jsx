@@ -44,16 +44,16 @@ const Header = () => {
                 <span>PR</span>Agency
               </h1>
               <li>
-                <Link>Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <Link>About</Link>
+                <Link to="/about">About</Link>
               </li>
               <li>
                 <Link>Portfolio</Link>
               </li>
               <li>
-                <Link>Services</Link>
+                <Link to="/services">Services</Link>
               </li>
               <li>
                 <Link>Vacancies</Link>
