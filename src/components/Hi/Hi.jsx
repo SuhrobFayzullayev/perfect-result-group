@@ -1,6 +1,5 @@
 import React from "react";
 import "./Hi.scss";
-import PR from "./PR.png";
 import Video from "./../../assets/videos/Hi_Bg_Video.mp4";
 function Hi({ isAbout }) {
   const data = [

@@ -42,10 +42,7 @@
     font-weight: 600;
     font-size: 70px;
     line-height: 100%;
-    /* identical to box height, or 70px */
-
     letter-spacing: 0.2em;
-
     background: linear-gradient(180deg, #4542ff 20%, #0f0f0f 65.5%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -210,6 +207,6 @@
         font-size: 25px;
     }
     .title__name {
-        font-size: 18px;
+        font-size: 18gpx;
     }
 }
