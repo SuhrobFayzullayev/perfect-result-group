@@ -1,7 +1,7 @@
 import React from "react";
 import "./MySlider.scss";
 
-import { Navigation, A11y, EffectCoverflow } from "swiper";
+import { Navigation } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
