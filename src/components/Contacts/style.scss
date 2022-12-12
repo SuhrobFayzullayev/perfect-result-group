@@ -1,4 +1,4 @@
-.contactWrapper{
+.contactWrapper {
     position: relative;
     display: flex;
     justify-content: center;
@@ -7,52 +7,52 @@
     transition: all 0.3s;
     height: 749px;
     overflow: hidden;
-    .arrowTopWrapper{
+    .arrowTopWrapper {
         position: fixed;
         bottom: 100px;
         right: 50px;
-        border: 1px solid #000000 ;
+        border: 1px solid #000000;
         border-radius: 50px;
-        img{
+        img {
             padding: 20px;
         }
-        &:active{
+        &:active {
             opacity: 0.5;
         }
     }
-    .img{
+    .img {
         position: absolute;
         width: 100%;
         z-index: -1;
     }
-    .contactColumns{
+    .contactColumns {
         z-index: 999;
         display: flex;
         justify-content: flex-start;
         background-color: transparent;
         gap: 30px;
         // align-items: center;
-        .contactColumnText{
+        .contactColumnText {
             font-weight: 500;
-font-size: 26px;
-line-height: 31px;
+            font-size: 26px;
+            line-height: 31px;
         }
-        :where(.css-dev-only-do-not-override-1i536d8).ant-input-textarea-show-count >.ant-input{
+        :where(.css-dev-only-do-not-override-1i536d8).ant-input-textarea-show-count > .ant-input {
             background-color: transparent;
         }
-        div{
+        div {
             z-index: 999;
         }
-        .inputs{
+        .inputs {
             padding: 50px 0;
             z-index: 999;
             position: relative;
-            .btnAbsolute{
+            .btnAbsolute {
                 position: absolute;
                 right: 10px;
                 bottom: 60px;
             }
-            .btn{
+            .btn {
                 margin-top: 20px;
             }
         }

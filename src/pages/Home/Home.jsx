@@ -12,7 +12,6 @@ const Home = () => {
       <Hi isAbout={false} />
       <HomePortfolio/>
       <Client />
-      <Name name={"Contact"} />
       <Contact />
     </>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Client.scss";
 import ClientImg from "./../../assets/img/clientCardImg.png";
+import Name from "../ComponentName";
 function Client() {
   const data = [
     {
@@ -54,7 +55,9 @@ function Client() {
   ];
   console.log(data);
   return (
+
     <div className="clients">
+      <Name name={"Client"} />
       <div className="clients__container">
         {data.map((item) => {
           return (

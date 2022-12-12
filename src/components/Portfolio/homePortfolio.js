@@ -1,8 +1,8 @@
 import { Button } from "antd";
 import React from "react";
-import "./portfolio.scss";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import Name from "../ComponentName";
+import "./portfolio.scss";
 
 const data = [
   {
@@ -19,7 +19,6 @@ export default function HomePortfolio() {
   return (
     <>
       <Name name={"Portfolio"} />
-
       <div className="container component_name globalWrapper">
         <div className="box">
           {data.map((v, i) => (

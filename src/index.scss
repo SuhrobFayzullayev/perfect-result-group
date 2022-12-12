@@ -7,6 +7,9 @@
     font-family: 'Motserrat', sans-serif;
     scroll-behavior: smooth;
 }
+body{
+    background-color: $background;
+}
 
 // bu globalWrapper pagelarda eng katta konteynerga chaqiriladi 
 .globalWrapper{
