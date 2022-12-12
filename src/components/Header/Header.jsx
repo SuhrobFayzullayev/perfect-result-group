@@ -4,6 +4,7 @@ import { ReactComponent as Logo } from "../../assets/icon/logo.svg";
 import { ReactComponent as Call_icon } from "../../assets/icon/call.svg";
 import { ReactComponent as Email_icon } from "../../assets/icon/email.svg";
 import { ReactComponent as Location_icon } from "../../assets/icon/location.svg";
+import {ReactComponent as NavToggle} from "../../assets/icon/sideMenu.svg";
 import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, Space } from "antd";
 import "./index.scss";
@@ -44,18 +45,18 @@ const Header = () => {
                 <span>PR</span>Agency
               </h1>
               <li>
-                <Link to="/">Home</Link>
+                <Link onClick={() => handleMenuToggle()} to="/">Home</Link>
               </li>
-              <li>
+              <li onClick={() => setMenu(false)}>
                 <Link to="/about">About</Link>
               </li>
-              <li>
+              <li onClick={() => setMenu(false)}>
                 <Link to="/portfolio">Portfolio</Link>
-              </li>
-              <li>
+              </li >
+              <li onClick={() => setMenu(false)}>
                 <Link to="/services">Services</Link>
               </li>
-              <li>
+              <li onClick={() => setMenu(false)}>
                 <Link to="/vacancies">Vacancies</Link>
               </li>
               <div className="mobile_content">
@@ -114,7 +115,7 @@ const Header = () => {
             <button>Contact</button>
           </div>
           <div className="navbar_toggle" onClick={() => handleMenuToggle()}>
-            <div className="image"></div>
+            <NavToggle/>
           </div>
         </div>
       </div>

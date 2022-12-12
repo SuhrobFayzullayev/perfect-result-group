@@ -55,7 +55,9 @@ const Inputs = ({
             name={name}
             className="inputt"
             style={{
-              width: width ? `${width}px` : `100%`,
+              width: `100%`,
+              minWidth: "345px",
+              maxWidth: width ? `${width}px` : `100%`,
               height: height ? `${height}px` : `60px`,
               paddingLeft: icon ? `50px` : "15px",
               border: border ? `none` : `2px solid #79787A`,

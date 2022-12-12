@@ -275,12 +275,15 @@
     }
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .main_content {
-    padding-bottom: 100px;
+    gap: 12px;
+    padding-bottom: 50px;
     .heading {
-      font-size: 20px;
-      padding-bottom: 10px;
+      font-size: 14px;
+      line-height: 17px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(#0500ff, 1);
     }
     .ant-tabs {
       padding: 0px 10px;
@@ -289,10 +292,49 @@
         .ant-tabs-nav-wrap {
           .ant-tabs-nav-list {
             .ant-tabs-tab {
-              padding-right: 25px;
+              padding-right: 20px;
               .ant-tabs-tab-btn {
                 font-size: 14px;
+                font-family: "Montserrat", sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 12px;
+                color: #000000;
+                opacity: 0.5;
               }
+            }
+            .ant-tabs-tab-active {
+              .ant-tabs-tab-btn {
+                font-family: "Montserrat", sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 10px;
+                line-height: 100%;
+                color: #2b13bb;
+                opacity: 1;
+              }
+              ::before {
+                display: block;
+                content: "";
+                position: absolute;
+                top: calc(100% + 2px);
+                width: calc(100% + 4px);
+                left: -2px;
+                height: 2px;
+                border-radius: 5px;
+                background: linear-gradient(
+                  270.11deg,
+                  #4542ff 30.39%,
+                  #ffffff 81.42%
+                );
+                transition: 0.3s linear all;
+              }
+            }
+            &::-webkit-scrollbar {
+              // width: 3px;
+              height: 5px;
+              margin-top: 10px;
             }
           }
         }
@@ -301,7 +343,7 @@
         .ant-tabs-content {
           .ant-tabs-tabpane {
             .content {
-              gap: 25px;
+              gap: 20px;
               .image {
                 height: 200px;
                 img {
@@ -314,12 +356,21 @@
               .info {
                 gap: 10px;
                 h1 {
-                  font-size: 20px;
-                  line-height: 25px;
+                  font-family: "Montserrat", sans-serif;
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 12px;
+                  line-height: 15px;
+                  color: #000000;
                 }
                 p {
-                  font-size: 16px;
-                  line-height: 23px;
+                  font-family: "Montserrat", sans-serif;
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 8px;
+                  line-height: 22px;
+                  text-align: center;
+                  color: #000000;
                 }
               }
             }
@@ -327,5 +378,14 @@
         }
       }
     }
+  }
+}
+@media (max-width: 400px) {
+  .main_content {
+    padding-bottom: 100px;
+    // .heading {
+    //   font-size: 20px;
+    //   padding-bottom: 10px;
+    // }
   }
 }
