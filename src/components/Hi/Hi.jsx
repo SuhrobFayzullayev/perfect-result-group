@@ -1,4 +1,5 @@
 import React from "react";
+import { gsap } from "gsap";
 import "./Hi.scss";
 import Video from "./../../assets/videos/Hi_Bg_Video.mp4";
 function Hi({ isAbout }) {
@@ -7,6 +8,7 @@ function Hi({ isAbout }) {
     { id: 2, name: "Experience", number: "1 years" },
     { id: 3, name: "Active clients", number: "16" },
   ];
+  
   return (
     <div className="hi">
       <div className="hi__title title">
@@ -19,10 +21,10 @@ function Hi({ isAbout }) {
           loop
         ></video>
         <div className="title__body">
-          <h1 className="title__title">PERFECT RESULT</h1>
+          <h1 className="title__title" id="myText">PERFECT RESULT</h1>
           <div className="title__line"></div>
           <h2 className="title__name">
-            <span>IT Agancy Team</span> <strong> Desigin system </strong>
+            <span onClick={tl.restart()}>IT Agancy Team</span> <strong> Desigin system </strong>
           </h2>
         </div>
       </div>
