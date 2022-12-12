@@ -1,6 +1,5 @@
 import React from "react";
 import "./Hi.scss";
-import PR from "./PR.png";
 import Video from "./../../assets/videos/Hi_Bg_Video.mp4";
 function Hi({ isAbout }) {
   const data = [
@@ -19,14 +18,12 @@ function Hi({ isAbout }) {
           muted
           loop
         ></video>
-        <div className="title__row">
-          <img className="title__img" width={130} src={PR} alt="img" />
-          <div className="title__body">
-            <h1 className="title__name">
-              <span>IT Agancy Team</span> <strong> Desigin system </strong>
-            </h1>
-            <div className="title__line"></div>
-          </div>
+        <div className="title__body">
+          <h1 className="title__title">PERFECT RESULT</h1>
+          <div className="title__line"></div>
+          <h2 className="title__name">
+            <span>IT Agancy Team</span> <strong> Desigin system </strong>
+          </h2>
         </div>
       </div>
       {isAbout && (
