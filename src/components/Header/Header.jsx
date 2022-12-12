@@ -45,18 +45,18 @@ const Header = () => {
                 <span>PR</span>Agency
               </h1>
               <li>
-                <Link to="/">Home</Link>
+                <Link onClick={() => handleMenuToggle()} to="/">Home</Link>
               </li>
-              <li>
+              <li onClick={() => setMenu(false)}>
                 <Link to="/about">About</Link>
               </li>
-              <li>
+              <li onClick={() => setMenu(false)}>
                 <Link to="/portfolio">Portfolio</Link>
-              </li>
-              <li>
+              </li >
+              <li onClick={() => setMenu(false)}>
                 <Link to="/services">Services</Link>
               </li>
-              <li>
+              <li onClick={() => setMenu(false)}>
                 <Link to="/vacancies">Vacancies</Link>
               </li>
               <div className="mobile_content">
