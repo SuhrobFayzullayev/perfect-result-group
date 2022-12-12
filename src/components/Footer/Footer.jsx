@@ -9,6 +9,8 @@ import {ReactComponent as Call_icon} from "../../assets/icon/call.svg";
 import {ReactComponent as Email_icon} from "../../assets/icon/email.svg";
 import {ReactComponent as Location_icon} from "../../assets/icon/location.svg"
 import "./index.scss";
+import { HeaderTiltle } from '../HeaderTitle/HeaderTiltle';
+
 const Footer = () => {
   return (
     <footer>
@@ -24,21 +26,7 @@ const Footer = () => {
         <div className="right_footer">
           <nav>
             <ul>
-              <li>
-                <Link>Home</Link>
-              </li>
-              <li>
-                <Link>About</Link>
-              </li>
-              <li>
-                <Link>Portfolio</Link>
-              </li>
-              <li>
-                <Link>Services</Link>
-              </li>
-              <li>
-                <Link>Vacancies</Link>
-              </li>
+              <HeaderTiltle />
             </ul>
           </nav>
           <div className="for_social_media">
