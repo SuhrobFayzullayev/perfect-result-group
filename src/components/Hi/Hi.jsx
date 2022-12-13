@@ -1,7 +1,9 @@
 import React from "react";
 import "./Hi.scss";
 import Video from "./../../assets/videos/Hi_Bg_Video.mp4";
-function Hi({ isAbout }) {
+import circleText from "./../../assets/img/circleText.png";
+import circleTextSmall from "./../../assets/img/circleTextSmall.png";
+function Hi({ name }) {
   const data = [
     { id: 1, name: "Projects", number: "25" },
     { id: 2, name: "Experience", number: "1 years" },
@@ -21,12 +23,33 @@ function Hi({ isAbout }) {
         <div className="title__body">
           <h1 className="title__title">PERFECT RESULT</h1>
           <div className="title__line"></div>
-          <h2 className="title__name">
-            <span>IT Agancy Team</span> <strong> Desigin system </strong>
-          </h2>
+          {String(name).toLocaleLowerCase() !== "home" && (
+            <h2 className="title__name">{name}</h2>
+          )}
+          <div className="title__descr">
+            <div className="title__descr-title">
+              QUALITY AND FAST SITE WITH US
+            </div>
+            <p className="title__descr-paragraph">
+              "PR" company aims to create a highly competitive IT company in the
+              main market that focuses on its customers and creates favorable
+              conditions for cooperation.
+            </p>
+            {window.innerWidth > 560 && (
+              <div className="title__descr-decor">
+                <img src={circleText} alt="PERFECT RESULT" />
+              </div>
+            )}
+          </div>
         </div>
       </div>
-      {isAbout && (
+
+      {window.innerWidth <= 560 && (
+        <div className="title-decor">
+          <img src={circleTextSmall} alt="PERFECT RESULT" />
+        </div>
+      )}
+      {String(name).toLocaleLowerCase() === "about team" && (
         <div className="hi__statistics statistics">
           <div className="statistics__row">
             {data.map((item) => {
