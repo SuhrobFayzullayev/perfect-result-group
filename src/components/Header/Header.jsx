@@ -41,9 +41,6 @@ const Header = () => {
               <div className="closing_icon" onClick={() => handleMenuToggle()}>
                 <div className="image"></div>
               </div>
-              <h1>
-                <span>PR</span>Agency
-              </h1>
               <li>
                 <Link onClick={() => handleMenuToggle()} to="/">Home</Link>
               </li>
@@ -59,7 +56,7 @@ const Header = () => {
               <li onClick={() => setMenu(false)}>
                 <Link to="/vacancies">Vacancies</Link>
               </li>
-              <div className="mobile_content">
+              {/* <div className="mobile_content">
                 <a href="tel:+998936843757">
                   <div className="for_image">
                     <Call_icon />
@@ -93,7 +90,7 @@ const Header = () => {
                     <button>Map</button>
                   </div>
                 </a>
-              </div>
+              </div> */}
             </ul>
           </nav>
           <div className="lang_dropdown">
