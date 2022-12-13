@@ -1,4 +1,7 @@
 @import "../../assets/scss/variables.scss";
+.ant-dropdown {
+  z-index: 10000;
+}
 header {
   width: 100%;
   background-color: #000000;
@@ -113,7 +116,7 @@ header {
         }
       }
       .lang_dropdown {
-        z-index: 4;
+        z-index: 10000;
         .ant-dropdown-trigger {
           .ant-space {
             .ant-space-item {
@@ -126,6 +129,23 @@ header {
             }
           }
         }
+        // .ant-dropdown-open {
+        //   padding: 5px 0;
+        //   background: #ffffff;
+        //   border-radius: 5px 5px 0 0;
+        //   .ant-space {
+        //     padding-bottom: 4px;
+        //     border-bottom: 0.5 solid #000000;
+        //     .ant-space-item {
+        //       font-family: "Montserrat", sans-serif;
+        //       font-style: normal;
+        //       font-weight: 400;
+        //       font-size: 18px;
+        //       line-height: 100%;
+        //       color: #000000;
+        //     }
+        //   }
+        // }
       }
       .contact_btn {
         width: 146px;
