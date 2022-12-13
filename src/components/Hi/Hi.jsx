@@ -26,21 +26,24 @@ function Hi({ name }) {
           {String(name).toLocaleLowerCase() !== "home" && (
             <h2 className="title__name">{name}</h2>
           )}
-          <div className="title__descr">
-            <div className="title__descr-title">
-              QUALITY AND FAST SITE WITH US
-            </div>
-            <p className="title__descr-paragraph">
-              "PR" company aims to create a highly competitive IT company in the
-              main market that focuses on its customers and creates favorable
-              conditions for cooperation.
-            </p>
-            {window.innerWidth > 560 && (
-              <div className="title__descr-decor">
-                <img src={circleText} alt="PERFECT RESULT" />
+
+          {String(name).toLocaleLowerCase() === "home" && (
+            <div className="title__descr">
+              <div className="title__descr-title">
+                QUALITY AND FAST SITE WITH US
               </div>
-            )}
-          </div>
+              <p className="title__descr-paragraph">
+                "PR" company aims to create a highly competitive IT company in
+                the main market that focuses on its customers and creates
+                favorable conditions for cooperation.
+              </p>
+              {window.innerWidth > 560 && (
+                <div className="title__descr-decor">
+                  <img src={circleText} alt="PERFECT RESULT" />
+                </div>
+              )}
+            </div>
+          )}
         </div>
       </div>
 
