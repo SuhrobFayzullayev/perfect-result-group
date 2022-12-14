@@ -151,3 +151,207 @@
     },
   ];
 
+  
+  export const  seo = [
+    {
+      className: "one",
+      // img: "https://www.trainingexperience.org/blog/wp-content/uploads/2018/06/agence-application-mobile-1148654.jpg",
+    },
+    {
+      className: "two",
+      // img: "https://i.pinimg.com/564x/e0/7b/02/e07b02d261b943d15e9e38d1a53246fb.jpg",
+    },
+    {
+      className: "three",
+      // img: "https://i.pinimg.com/564x/aa/ea/53/aaea53b09340e4405945de17a99f7863.jpg",
+    },
+    {
+      className: "four",
+      // img: "https://i.pinimg.com/736x/2e/eb/30/2eeb30dced0bdb8c45abe886e49e1304.jpg",
+    },
+    {
+      className: "five",
+      // img: "https://i.pinimg.com/564x/e3/c5/5c/e3c55c0bc1cacb0c30b6e3974ae30c3f.jpg",
+    },
+    {
+      className: "six",
+      // img: "https://cdn.dal.ca/campus_life/dal-mobile-app/_jcr_content/contentPar/staticimage.adaptive.full.high.png/1656596013070.png",
+    },
+    {
+      className: "seven",
+      // img: "https://i.pinimg.com/564x/18/db/d1/18dbd138f85a502d87c62307cec7aaf1.jpg",
+    },
+    {
+      className: "eight",
+      // img: "https://i.pinimg.com/564x/ba/f8/d1/baf8d14bee044605b001d65952207543.jpg",
+    },
+    {
+      className: "nine",
+      // img: "https://i.pinimg.com/564x/fc/91/9a/fc919a952f0628c5fa010a4df3129807.jpg",
+    },
+    {
+      className: "ten",
+      // img: "https://i.pinimg.com/564x/05/11/1b/05111ba1b95434043c70bde65fb37039.jpg",
+    },
+    {
+      className: "eleven",
+      // img: "https://i.pinimg.com/564x/81/6c/0d/816c0d51ca14d510a8bfa5d31a1fe211.jpg",
+    },
+    {
+      className: "twelve",
+      // img: "https://i.pinimg.com/564x/41/4c/24/414c2440e9a33adc3773b3e681e2ce6b.jpg",
+    },
+  ];
+
+  export const  telegramBot = [
+    {
+      className: "one",
+      // img: "https://www.trainingexperience.org/blog/wp-content/uploads/2018/06/agence-application-mobile-1148654.jpg",
+    },
+    {
+      className: "two",
+      // img: "https://i.pinimg.com/564x/e0/7b/02/e07b02d261b943d15e9e38d1a53246fb.jpg",
+    },
+    {
+      className: "three",
+      // img: "https://i.pinimg.com/564x/aa/ea/53/aaea53b09340e4405945de17a99f7863.jpg",
+    },
+    {
+      className: "four",
+      // img: "https://i.pinimg.com/736x/2e/eb/30/2eeb30dced0bdb8c45abe886e49e1304.jpg",
+    },
+    {
+      className: "five",
+      // img: "https://i.pinimg.com/564x/e3/c5/5c/e3c55c0bc1cacb0c30b6e3974ae30c3f.jpg",
+    },
+    {
+      className: "six",
+      // img: "https://cdn.dal.ca/campus_life/dal-mobile-app/_jcr_content/contentPar/staticimage.adaptive.full.high.png/1656596013070.png",
+    },
+    {
+      className: "seven",
+      // img: "https://i.pinimg.com/564x/18/db/d1/18dbd138f85a502d87c62307cec7aaf1.jpg",
+    },
+    {
+      className: "eight",
+      // img: "https://i.pinimg.com/564x/ba/f8/d1/baf8d14bee044605b001d65952207543.jpg",
+    },
+    {
+      className: "nine",
+      // img: "https://i.pinimg.com/564x/fc/91/9a/fc919a952f0628c5fa010a4df3129807.jpg",
+    },
+    {
+      className: "ten",
+      // img: "https://i.pinimg.com/564x/05/11/1b/05111ba1b95434043c70bde65fb37039.jpg",
+    },
+    {
+      className: "eleven",
+      // img: "https://i.pinimg.com/564x/81/6c/0d/816c0d51ca14d510a8bfa5d31a1fe211.jpg",
+    },
+    {
+      className: "twelve",
+      // img: "https://i.pinimg.com/564x/41/4c/24/414c2440e9a33adc3773b3e681e2ce6b.jpg",
+    },
+  ];
+
+  export const  reklama = [
+    {
+      className: "one",
+      // img: "https://www.trainingexperience.org/blog/wp-content/uploads/2018/06/agence-application-mobile-1148654.jpg",
+    },
+    {
+      className: "two",
+      // img: "https://i.pinimg.com/564x/e0/7b/02/e07b02d261b943d15e9e38d1a53246fb.jpg",
+    },
+    {
+      className: "three",
+      // img: "https://i.pinimg.com/564x/aa/ea/53/aaea53b09340e4405945de17a99f7863.jpg",
+    },
+    {
+      className: "four",
+      // img: "https://i.pinimg.com/736x/2e/eb/30/2eeb30dced0bdb8c45abe886e49e1304.jpg",
+    },
+    {
+      className: "five",
+      // img: "https://i.pinimg.com/564x/e3/c5/5c/e3c55c0bc1cacb0c30b6e3974ae30c3f.jpg",
+    },
+    {
+      className: "six",
+      // img: "https://cdn.dal.ca/campus_life/dal-mobile-app/_jcr_content/contentPar/staticimage.adaptive.full.high.png/1656596013070.png",
+    },
+    {
+      className: "seven",
+      // img: "https://i.pinimg.com/564x/18/db/d1/18dbd138f85a502d87c62307cec7aaf1.jpg",
+    },
+    {
+      className: "eight",
+      // img: "https://i.pinimg.com/564x/ba/f8/d1/baf8d14bee044605b001d65952207543.jpg",
+    },
+    {
+      className: "nine",
+      // img: "https://i.pinimg.com/564x/fc/91/9a/fc919a952f0628c5fa010a4df3129807.jpg",
+    },
+    {
+      className: "ten",
+      // img: "https://i.pinimg.com/564x/05/11/1b/05111ba1b95434043c70bde65fb37039.jpg",
+    },
+    {
+      className: "eleven",
+      // img: "https://i.pinimg.com/564x/81/6c/0d/816c0d51ca14d510a8bfa5d31a1fe211.jpg",
+    },
+    {
+      className: "twelve",
+      // img: "https://i.pinimg.com/564x/41/4c/24/414c2440e9a33adc3773b3e681e2ce6b.jpg",
+    },
+  ];
+
+  export const  logoBranding = [
+    {
+      className: "one",
+      // img: "https://www.trainingexperience.org/blog/wp-content/uploads/2018/06/agence-application-mobile-1148654.jpg",
+    },
+    {
+      className: "two",
+      // img: "https://i.pinimg.com/564x/e0/7b/02/e07b02d261b943d15e9e38d1a53246fb.jpg",
+    },
+    {
+      className: "three",
+      // img: "https://i.pinimg.com/564x/aa/ea/53/aaea53b09340e4405945de17a99f7863.jpg",
+    },
+    {
+      className: "four",
+      // img: "https://i.pinimg.com/736x/2e/eb/30/2eeb30dced0bdb8c45abe886e49e1304.jpg",
+    },
+    {
+      className: "five",
+      // img: "https://i.pinimg.com/564x/e3/c5/5c/e3c55c0bc1cacb0c30b6e3974ae30c3f.jpg",
+    },
+    {
+      className: "six",
+      // img: "https://cdn.dal.ca/campus_life/dal-mobile-app/_jcr_content/contentPar/staticimage.adaptive.full.high.png/1656596013070.png",
+    },
+    {
+      className: "seven",
+      // img: "https://i.pinimg.com/564x/18/db/d1/18dbd138f85a502d87c62307cec7aaf1.jpg",
+    },
+    {
+      className: "eight",
+      // img: "https://i.pinimg.com/564x/ba/f8/d1/baf8d14bee044605b001d65952207543.jpg",
+    },
+    {
+      className: "nine",
+      // img: "https://i.pinimg.com/564x/fc/91/9a/fc919a952f0628c5fa010a4df3129807.jpg",
+    },
+    {
+      className: "ten",
+      // img: "https://i.pinimg.com/564x/05/11/1b/05111ba1b95434043c70bde65fb37039.jpg",
+    },
+    {
+      className: "eleven",
+      // img: "https://i.pinimg.com/564x/81/6c/0d/816c0d51ca14d510a8bfa5d31a1fe211.jpg",
+    },
+    {
+      className: "twelve",
+      // img: "https://i.pinimg.com/564x/41/4c/24/414c2440e9a33adc3773b3e681e2ce6b.jpg",
+    },
+  ];

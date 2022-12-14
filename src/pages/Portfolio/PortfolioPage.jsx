@@ -3,7 +3,7 @@ import Name from "../../components/ComponentName";
 import "./portfolioPage.scss";
 import { Tabs } from "antd";
 import Crm from "./Components/Crm/Crm";
-import { crm, mobileApp, onlineStore } from "./Components/Crm/helpers";
+import { crm, logoBranding, mobileApp, onlineStore, reklama, seo, telegramBot } from "./Components/Crm/helpers";
 import Hi from "../../components/Hi/Hi";
 
 export default function PortfolioPage() {
@@ -29,6 +29,26 @@ export default function PortfolioPage() {
               label: `Mobile App`,
               key: "3",
               children: <Crm data={mobileApp} />,
+            },
+            {
+              label: `Seo`,
+              key: "4",
+              children: <Crm data={seo} />,
+            },
+            {
+              label: `Telegram Bot`,
+              key: "5",
+              children: <Crm data={telegramBot} />,
+            },
+            {
+              label: `Reklama`,
+              key: "6",
+              children: <Crm data={reklama} />,
+            },
+            {
+              label: `Logo Branding`,
+              key: "7",
+              children: <Crm data={logoBranding} />,
             },
           ]}
         />
