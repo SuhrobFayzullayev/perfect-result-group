@@ -1,0 +1,77 @@
+.active::before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 4px);
+    width: calc(100% + 10px);
+    left: -3px;
+    bottom: 4px;
+    height: 5px;
+    border-radius: 5px;
+    background: linear-gradient(
+      270.11deg,
+      #4542ff 30.39%,
+      #ffffff 81.42%
+    );
+    transition: 0.3s linear all;
+    background-size: 200% 200%;
+    animation: gradient 5s linear infinite;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 0%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+li {
+  width: 73px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:last-child {
+    margin-right: 0;
+  }
+  .animation-a {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s linear all;
+    &:hover {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 100%;
+      color: #ffffff;
+      &::before {
+        display: block;
+      }
+    }
+    .animation-a::before {
+      display: none;
+      content: "";
+      position: absolute;
+      top: calc(100% + 4px);
+      width: calc(100% + 10px);
+      left: -3px;
+      bottom: 4px;
+      height: 5px;
+      border-radius: 5px;
+      background: linear-gradient(
+        270.11deg,
+        #4542ff 30.39%,
+        #ffffff 81.42%
+      );
+      transition: 0.3s linear all;
+    }
+  }
+}
