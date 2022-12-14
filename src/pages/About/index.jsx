@@ -113,7 +113,7 @@ const About = () => {
 
   return (
     <>
-      <Hi isAbout={true} />
+      <Hi name={"ABOUT TEAM"} />
       <div className={styles.title}>
         <h1>About Workflow</h1>
       </div>

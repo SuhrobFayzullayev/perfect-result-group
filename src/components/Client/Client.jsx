@@ -53,9 +53,7 @@ function Client() {
       path: ClientImg,
     },
   ];
-  console.log(data);
   return (
-
     <div className="clients">
       <Name name={"Client"} />
       <div className="clients__container">
