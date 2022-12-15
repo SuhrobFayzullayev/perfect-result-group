@@ -2,19 +2,19 @@ import React from "react";
 import Button from "../Generic/Button";
 import "./style.scss";
 import image from "./../../assets/img/contactBackground.png";
-import { Input } from "antd";
+// import { Input } from "antd";
 import location from "./../../assets/icon/location.svg";
 import phone from "./../../assets/icon/call.svg";
 import email from "./../../assets/icon/email.svg";
 import arrowTop from "./../../assets/icon/arrowTop.svg";
 import Name from "../ComponentName";
-import TextField from '@mui/material/TextField';
+import TextField from "@mui/material/TextField/TextField";
 
 const Contact = () => {
-  const { TextArea } = Input;
-  const onChange = (e) => {
-    console.log("Change:", e.target.value);
-  };
+  // const { TextArea } = Input;
+  // const onChange = (e) => {
+  //   console.log("Change:", e.target.value);
+  // };
   const scrol = () => {
     document.documentElement.scrollTop = 0;
   };
@@ -28,13 +28,30 @@ const Contact = () => {
             <div className="contactColumnText">Leave us a message</div>
             <div className="inputs">
               {/* <Inputs width={445} placeholder={"Email"} /> */}
-              <TextField style={{width: '445px'}} id="outlined-basic" label="Email" variant="outlined" />
+              <TextField
+                style={{ width: "445px" }}
+                id="outlined-basic"
+                label="Email"
+                variant="outlined"
+              />
             </div>
             <div className="inputs">
-              <TextField style={{width: '445px'}} id="outlined-basic" label="Phone number" variant="outlined" />             
+              <TextField
+                style={{ width: "445px" }}
+                id="outlined-basic"
+                label="Phone number"
+                variant="outlined"
+              />
             </div>
             <div className="inputs">
-              <TextField style={{width: '445px'}} rows={5} multiline id="outlined-basic" label="about your project" variant="outlined" />             
+              <TextField
+                style={{ width: "445px" }}
+                rows={5}
+                multiline
+                id="outlined-basic"
+                label="about your project"
+                variant="outlined"
+              />
             </div>
           </div>
           <div>
@@ -43,10 +60,12 @@ const Contact = () => {
               <Button
                 icon={location}
                 color={"black"}
-                background={'transparent'}
-                hoverBorder={'2px solid linear-gradient( #000000  100%, #2B13BB 100%);'}
-                hoverColor={'red'}
-                hoverBackground={'white'}
+                background={"transparent"}
+                hoverBorder={
+                  "2px solid linear-gradient( #000000  100%, #2B13BB 100%);"
+                }
+                hoverColor={"red"}
+                hoverBackground={"white"}
                 border={"2px solid grey"}
                 txt={"Tashkent city chilanzar 1"}
                 width={445}
@@ -72,11 +91,13 @@ const Contact = () => {
                 <Button
                   icon={phone}
                   color={"black"}
-                  hoverBorder={'2px solid linear-gradient( #000000  100%, #2B13BB 100%);'}
-                hoverColor={'red'}
-                hoverBackground={'white'}
+                  hoverBorder={
+                    "2px solid linear-gradient( #000000  100%, #2B13BB 100%);"
+                  }
+                  hoverColor={"red"}
+                  hoverBackground={"white"}
                   border={"2px solid grey"}
-                  background={'transparent'}
+                  background={"transparent"}
                   txt={"+998 90 111 11 11"}
                   width={445}
                 />
@@ -87,11 +108,13 @@ const Contact = () => {
                 <Button
                   icon={email}
                   color={"black"}
-                  hoverBorder={'2px solid linear-gradient( #000000  100%, #2B13BB 100%);'}
-                  hoverColor={'red'}
-                  hoverBackground={'white'}
+                  hoverBorder={
+                    "2px solid linear-gradient( #000000  100%, #2B13BB 100%);"
+                  }
+                  hoverColor={"red"}
+                  hoverBackground={"white"}
                   border={"2px solid grey"}
-                  background={'transparent'}
+                  background={"transparent"}
                   txt={"abdurashidovibrohim@gmail.com"}
                   width={445}
                 />
@@ -99,7 +122,7 @@ const Contact = () => {
               <div className="btn">
                 <Button
                   background={"#2B13BB"}
-                  border={'none'}
+                  border={"none"}
                   color={"white"}
                   width={445}
                   txt={"Submit"}
