@@ -103,7 +103,7 @@ const Header = () => {
                 <button>Contact</button>
             </div>
             <div className="navbar_toggle" onClick={() => handleMenuToggle()}>
-                <div className="image"></div>
+                <NavToggle />
             </div>
         </div>
       </div>
