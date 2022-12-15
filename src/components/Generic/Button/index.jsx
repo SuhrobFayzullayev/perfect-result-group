@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.scss";
 
 const Button = ({
@@ -11,8 +11,21 @@ const Button = ({
   background,
   onClick,
   radius,
-  icon
+  icon,
+  hoverColor,
+  hoverBackground,
+  hoverBorder
 }) => {
+  
+  const [isHovering, setIsHovering] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovering(false);
+  };
   return (
     <>
     <div className="genericRelativer">
@@ -24,15 +37,18 @@ const Button = ({
           gap: img ? `8px` : "0",
           display: 'flex',
           justifyContent: icon ?  "flex-start" : "",
-          paddingLeft: icon ? `50px` : "15px",
-          height: height ? `${height}px` : `60px`,
-          width: width ? `${width}px` : "128px",
-          minWidth: "128px",
-          color: color ? `${color}` : `inherit`,
-          border: border ? `${border}` : `#E6E9EC 1px solid`,
-          borderRadius: radius ? `${radius}` : `10px`,
-          backgroundColor: background ? `${background}` : `transparent`,
+          paddingLeft: icon ? `50px` : "0px",
+          height: height ? `${height}px` : `55px`,
+          width:width ? `${width}px` : '100%',
+          maxWidth: width ? `${width}px` : '128px',
+          minWidth: "68px",
+          border: isHovering ? `${hoverBorder}` : `${border}`,
+          borderRadius: radius ? `${radius}` : `15px`,
+          color: isHovering ? `${hoverColor}` : `${color}`,
+          backgroundColor: isHovering ? `${hoverBackground}` : `${background}`,
         }}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
         >
         <img src={img} alt="" />{txt}
       </button>
