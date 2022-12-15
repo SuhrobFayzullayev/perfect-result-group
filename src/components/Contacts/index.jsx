@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "../Generic/Button";
-import Inputs from "../Generic/Input";
 import "./style.scss";
 import image from "./../../assets/img/contactBackground.png";
 import { Input } from "antd";
@@ -10,6 +9,7 @@ import email from "./../../assets/icon/email.svg";
 import arrowTop from "./../../assets/icon/arrowTop.svg";
 import Name from "../ComponentName";
 import TextField from '@mui/material/TextField';
+
 const Contact = () => {
   const { TextArea } = Input;
   const onChange = (e) => {

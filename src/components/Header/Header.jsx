@@ -40,7 +40,6 @@ const Header = () => {
         <div className="right_header">
           <nav className={menu ? "activeMenu" : ""}>
             <ul>
-<<<<<<< HEAD
                 <div className="closing_icon" onClick={() => handleMenuToggle()}>
                     <div className="image"></div>
                 </div>
@@ -51,7 +50,7 @@ const Header = () => {
                 <div className="mobile_content">
                     <a href="tel:+998936843757">
                     <div className="for_image">
-                        <Call_icon />
+                        {/* <Call_icon /> */}
                     </div>
                         <h2>
                             <span>Call:</span>+998 99 111 11 11
@@ -62,7 +61,7 @@ const Header = () => {
                         target="blank"
                     >
                     <div className="for_image">
-                        <Email_icon />
+                        {/* <Email_icon /> */}
                     </div>
                         <h2>
                             <span>Gmail:</span>abdurashidov Ibrohim
@@ -73,7 +72,7 @@ const Header = () => {
                         target="blank"
                     >
                     <div className="for_image">
-                        <Location_icon />
+                        {/* <Location_icon /> */}
                     </div>
                     <h2>
                         <span>Map:</span>Toshkent chilanzar 1
@@ -106,49 +105,6 @@ const Header = () => {
             <div className="navbar_toggle" onClick={() => handleMenuToggle()}>
                 <div className="image"></div>
             </div>
-=======
-              <div className="closing_icon" onClick={() => handleMenuToggle()}>
-                <div className="image"></div>
-              </div>
-              <li>
-                <Link onClick={() => handleMenuToggle()} to="/">Home</Link>
-              </li>
-              <li onClick={() => setMenu(false)}>
-                <Link to="/about">About</Link>
-              </li>
-              <li onClick={() => setMenu(false)}>
-                <Link to="/portfolio">Portfolio</Link>
-              </li >
-              <li onClick={() => setMenu(false)}>
-                <Link to="/services">Services</Link>
-              </li>
-              <li onClick={() => setMenu(false)}>
-                <Link to="/vacancies">Vacancies</Link>
-              </li>
-            </ul>
-          </nav>
-          <div className="lang_dropdown">
-            <Dropdown
-              menu={{
-                items,
-              }}
-              trigger={["click"]}
-            >
-              <a onClick={(e) => e.preventDefault()}>
-                <Space style={{ cursor: "pointer" }}>
-                  EN
-                  <DownOutlined />
-                </Space>
-              </a>
-            </Dropdown>
-          </div>
-          <div className="contact_btn">
-            <button>Contact</button>
-          </div>
-          <div className="navbar_toggle" onClick={() => handleMenuToggle()}>
-            <NavToggle/>
-          </div>
->>>>>>> 1dd5a0994a43bb0037129d7af53935f964664186
         </div>
       </div>
     </header>

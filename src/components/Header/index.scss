@@ -70,54 +70,7 @@ header {
           .mobile_content {
             display: none;
           }
-<<<<<<< HEAD
           
-=======
-          li {
-            &:last-child {
-              margin-right: 0;
-            }
-            a {
-              font-family: "Montserrat", sans-serif;
-              font-style: normal;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 100%;
-              color: #ffffff;
-              text-decoration: none;
-              position: relative;
-              transition: 0.3s linear all;
-              &::before {
-                display: none;
-                content: "";
-                position: absolute;
-                top: calc(100% + 4px);
-                width: calc(100% + 10px);
-                left: -3px;
-                bottom: 4px;
-                height: 5px;
-                border-radius: 5px;
-                background: linear-gradient(
-                  270.11deg,
-                  #4542ff 30.39%,
-                  #ffffff 81.42%
-                );
-                transition: 0.3s linear all;
-              }
-              &:hover {
-                font-family: "Montserrat", sans-serif;
-                font-style: normal;
-                font-weight: 800;
-                font-size: 18px;
-                line-height: 100%;
-                color: #ffffff;
-                &::before {
-                  display: block;
-                }
-              }
-            }
-          }
->>>>>>> 1dd5a0994a43bb0037129d7af53935f964664186
         }
       }
       .lang_dropdown {
