@@ -21,61 +21,61 @@ const WorkFlow = () => {
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles.slider}>
-        <Swiper
-          navigation
-          slidesPerView={5}
-          spaceBetween={30}
-          pagination={{
-            clickable: true,
-          }}
-          breakpoints={{
-            400: {
-              slidesPerView: 1,
-              slidesPerView: 1,
-              spaceBetween: 10,
-              centeredSlides: false,
-            },
-            920: {
-              slidesPerView: 3,
-              spaceBetween: 50,
-              centeredSlides: false,
-            },
-            1340: {
-              slidesPerView: 5,
-              spaceBetween: 30,
-              centeredSlides: false,
-            },
-          }}
-          modules={[Navigation]}
-          className="mySwiper"
-        >
-          {data.length > 0 &&
-            data.map((item) => {
-              return (
-                <SwiperSlide key={item.id}>
-                  <div className={styles.card}>
-                    <div>
-                      <div className={styles.imageWrap}>
-                        <div className={styles.imageWrap2}>
-                          <div className={styles.overlay}>
-                            <img src={item.img} alt="" />
+        <div className={styles.slider}>
+          <Swiper
+            navigation
+            slidesPerView={5}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            breakpoints={{
+              400: {
+                slidesPerView: 1,
+                slidesPerView: 1,
+                spaceBetween: 10,
+                centeredSlides: false,
+              },
+              920: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+                centeredSlides: false,
+              },
+              1340: {
+                slidesPerView: 5,
+                spaceBetween: 30,
+                centeredSlides: false,
+              },
+            }}
+            modules={[Navigation]}
+            className="mySwiper"
+          >
+            {data.length > 0 &&
+              data.map((item) => {
+                return (
+                  <SwiperSlide key={item.id}>
+                    <div className={styles.card}>
+                      <div>
+                        <div className={styles.imageWrap}>
+                          <div className={styles.imageWrap2}>
+                            <div className={styles.overlay}>
+                              <img src={item.img} alt="" />
+                            </div>
                           </div>
+                          <img
+                            className={styles.videoIcon}
+                            src={videoIcon}
+                            alt=""
+                          />
                         </div>
-                        <img
-                          className={styles.videoIcon}
-                          src={videoIcon}
-                          alt=""
-                        />
+                        <p>{item.title}</p>
                       </div>
-                      <p>{item.title}</p>
                     </div>
-                  </div>
-                </SwiperSlide>
-              );
-            })}
-        </Swiper>
-      </div>
+                  </SwiperSlide>
+                );
+              })}
+          </Swiper>
+        </div>
     </div>
   );
 };
