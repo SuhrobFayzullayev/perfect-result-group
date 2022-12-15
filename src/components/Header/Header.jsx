@@ -46,11 +46,11 @@ const Header = () => {
                 <h1>
                     <span>PR</span>Agency
                 </h1>
-                    <HeaderTiltle />
-                <div className="mobile_content">
+                <HeaderTiltle />
+                {/* <div className="mobile_content">
                     <a href="tel:+998936843757">
                     <div className="for_image">
-                        {/* <Call_icon /> */}
+                        <Call_icon />
                     </div>
                         <h2>
                             <span>Call:</span>+998 99 111 11 11
@@ -61,7 +61,7 @@ const Header = () => {
                         target="blank"
                     >
                     <div className="for_image">
-                        {/* <Email_icon /> */}
+                        <Email_icon />
                     </div>
                         <h2>
                             <span>Gmail:</span>abdurashidov Ibrohim
@@ -72,7 +72,7 @@ const Header = () => {
                         target="blank"
                     >
                     <div className="for_image">
-                        {/* <Location_icon /> */}
+                        <Location_icon />
                     </div>
                     <h2>
                         <span>Map:</span>Toshkent chilanzar 1
@@ -81,9 +81,9 @@ const Header = () => {
                         <button>Map</button>
                     </div>
                 </a>
-              </div>
+              </div> */}
             </ul>
-            </nav>
+          </nav>
             <div className="lang_dropdown">
                 <Dropdown
                     menu={{
