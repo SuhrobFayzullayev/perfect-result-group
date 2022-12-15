@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Hi.scss";
 import Video from "./../../assets/videos/Hi_Bg_Video.mp4";
 import circleText from "./../../assets/img/circleText.png";
