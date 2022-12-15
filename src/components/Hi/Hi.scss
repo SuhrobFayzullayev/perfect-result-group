@@ -40,6 +40,8 @@
   left: 50%;
   transform: translate(-50%, 0);
   bottom: 370px;
+  animation: myAnim4 2s ease 0s 1 normal forwards;
+
   img {
     width: 100%;
   }
@@ -51,16 +53,53 @@
   margin: 0 auto;
 }
 .title__title {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 70px;
-  line-height: 100%;
-  letter-spacing: 0.2em;
-  background: linear-gradient(180deg, #4542ff 20%, #0f0f0f 65.5%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  span {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 100%;
+    letter-spacing: 0.2em;
+    background: linear-gradient(180deg, #4542ff 20%, #0f0f0f 65.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+.title__left {
+  display: block;
+  animation: myAnim1 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.title__right {
+  animation: myAnim2 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim2 {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .title__name {
   font-family: "Montserrat";
@@ -77,9 +116,23 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-transform: uppercase;
+
+  animation: myAnim3 2s ease 0s 1 normal forwards;
 }
 .title__descr {
   position: relative;
+}
+
+@keyframes myAnim3 {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .title__descr-title {
   font-family: "Montserrat";
@@ -95,6 +148,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+
+  animation: myAnim3 2s ease 0s 1 normal forwards;
 }
 .title__descr-paragraph {
   font-family: "Montserrat";
@@ -111,6 +166,8 @@
   margin: 0 auto;
   padding: 0 10px;
   padding-bottom: 40px;
+
+  animation: myAnim3 2s ease 0s 1 normal forwards;
 }
 .title__descr-decor {
   width: 212px;
@@ -124,6 +181,18 @@
   left: 50%;
   z-index: 100;
   transform: translate(-50%, 0);
+  animation: myAnim4 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim4 {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 0) scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
 }
 .title__line {
   border-radius: 10px;
@@ -224,7 +293,7 @@
   }
 }
 @media screen and (max-width: 920px) {
-  .title__title {
+  .title__title span {
     font-size: 52px;
     line-height: 100%;
   }
@@ -242,7 +311,7 @@
   }
 }
 @media screen and (max-width: 660px) {
-  .title__title {
+  .title__title span {
     font-size: 45px;
   }
   .title__name {
@@ -259,7 +328,7 @@
 }
 @media screen and (max-width: 560px) {
   .title {
-    padding: 60px 0px 130px 0px;
+    padding: 60px 0px 120px 0px;
   }
   .statistics {
     padding: 70px 20px 50px;
@@ -276,8 +345,8 @@
     font-size: 16px;
     line-height: 24px;
   }
-  .title__title {
-    font-size: 35px;
+  .title__title span {
+    font-size: 33px;
   }
   .title__name {
     font-size: 24px;
@@ -290,6 +359,10 @@
   .title__descr-paragraph {
     font-size: 16px;
     line-height: 160%;
+  }
+
+  .title-decor {
+    bottom: 300px;
   }
 }
 @media (max-width: 500px) {
@@ -310,12 +383,12 @@
     line-height: 160%;
   }
   .title-decor {
-    bottom: 440px;
+    bottom: 360px;
   }
 }
 @media screen and (max-width: 438px) {
-  .title__title {
-    font-size: 30px;
+  .title__title span {
+    font-size: 28px;
   }
 
   .title__descr-title {
@@ -327,15 +400,15 @@
   }
 
   .title-decor {
-    bottom: 480px;
+    bottom: 380px;
   }
 }
 @media screen and (max-width: 380px) {
   .title {
     padding-bottom: 100px;
   }
-  .title__title {
-    font-size: 25px;
+  .title__title span {
+    font-size: 22px;
   }
   .title__name {
     font-size: 16px;
@@ -352,6 +425,6 @@
 
   .title-decor {
     width: 62px;
-    bottom: 540px;
+    bottom: 440px;
   }
 }
