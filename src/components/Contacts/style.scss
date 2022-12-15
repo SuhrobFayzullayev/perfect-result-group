@@ -53,10 +53,17 @@
             padding: 30px 0;
             z-index: 999;
             position: relative;
+            
+
+            .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+                border: 2px solid #79787A;
+                border-radius: 15px;
+            }
             .btnAbsolute {
                 position: absolute;
                 right: 10px;
                 bottom: 40px;
+                width: 92px;
             }
             .btn {
                 margin-top: 20px;
@@ -117,5 +124,21 @@
                 }
             }
         }
+    }
+}
+@media(max-width: 500px){
+    .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+        width: 360px;
+    }
+}
+@media(max-width: 376px){
+    .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+        width: 330px;
+    }
+}
+@media(max-width: 320px){
+    .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+        padding-left: 10px;
+        width: 300px;
     }
 }

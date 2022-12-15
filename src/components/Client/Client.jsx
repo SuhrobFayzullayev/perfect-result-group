@@ -2,6 +2,13 @@ import React from "react";
 import "./Client.scss";
 import ClientImg from "./../../assets/img/clientCardImg.png";
 import Name from "../ComponentName";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import { Pagination } from "swiper";
+
+import "swiper/css";
+import "swiper/css/pagination";
+
 function Client() {
   const data = [
     {
@@ -53,20 +60,44 @@ function Client() {
       path: ClientImg,
     },
   ];
-  console.log(data);
-  return (
+  const width = window.innerWidth;
 
+  return (
     <div className="clients">
       <Name name={"Client"} />
-      <div className="clients__container">
-        {data.map((item) => {
-          return (
-            <div key={item.id} className="clients__card">
-              <img src={item.path} alt="img" />
-            </div>
-          );
-        })}
-      </div>
+      {width > 640 && (
+        <div className="clients__container">
+          {data.map((item) => {
+            return (
+              <div key={item.id} className="clients__card">
+                <img src={item.path} alt="img" />
+              </div>
+            );
+          })}
+        </div>
+      )}
+      {width <= 640 && (
+        <Swiper
+          className={"clients__flex"}
+          autoplay={true}
+          spaceBetween={50}
+          pagination={{
+            dynamicBullets: true,
+            clickable: true,
+          }}
+          modules={[Pagination]}
+        >
+          {data.map((item) => {
+            return (
+              <SwiperSlide key={item.id}>
+                <div className="clients__card">
+                  <img className="slider__img" src={item.path} alt="img" />
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      )}
     </div>
   );
 }
