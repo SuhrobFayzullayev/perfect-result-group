@@ -1,8 +1,8 @@
 .container {
   margin: 0 auto;
+
   .cardWrapper {
     max-width: 540px;
-    min-width: 420px;
     background: #ffffff;
     border-radius: 25px;
     display: flex;
@@ -20,11 +20,18 @@
       border-radius: 25px;
     }
 
+    @media (max-width: 460px) {
+      flex-direction: column;
+    }
+
     .line {
       background: #000000;
       opacity: 0.5;
       width: 1px;
       height: 117px;
+      @media (max-width: 460px) {
+        display: none;
+      }
     }
     .title {
       .description {
@@ -32,7 +39,7 @@
         align-items: center;
         gap: 10px;
         margin-bottom: 12px;
-        
+
         h1 {
           font-style: normal;
           font-weight: 600;
