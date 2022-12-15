@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../Generic/Button";
 import "./style.scss";
 import image from "./../../assets/img/contactBackground.png";
-import { Input } from "antd";
+// import { Input } from "antd";
 import location from "./../../assets/icon/location.svg";
 import phone from "./../../assets/icon/call.svg";
 import email from "./../../assets/icon/email.svg";
@@ -11,10 +11,10 @@ import Name from "../ComponentName";
 import TextField from "@mui/material/TextField/TextField";
 
 const Contact = () => {
-  const { TextArea } = Input;
-  const onChange = (e) => {
-    console.log("Change:", e.target.value);
-  };
+  // const { TextArea } = Input;
+  // const onChange = (e) => {
+  //   console.log("Change:", e.target.value);
+  // };
   const scrol = () => {
     document.documentElement.scrollTop = 0;
   };
