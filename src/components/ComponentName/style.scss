@@ -1,13 +1,25 @@
-.component_name{
+@import "../../assets/scss/variables.scss";
+.component_name {
     font-weight: 700;
-font-size: 30px;
-line-height: 48px;
-    color: blue;
-    padding-bottom: 30px;
+    font-size: 30px;
+    line-height: 48px;
+    color: $blue;
+    padding-bottom: 30px !important;
 }
-.borderBottom{
+.borderBottom {
     margin-bottom: 50px;
-    border-bottom: 4px solid blue;
+    border-bottom: 4px solid $blue;
     opacity: 0.5;
     width: 100%;
+}
+@media (max-width: 700px) {
+    .component_name{
+        padding-bottom: 20px !important;
+    }
+
+}
+@media (max-width: 400px) {
+    .component_name{
+        padding-bottom: 12px !important;
+    }
 }

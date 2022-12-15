@@ -1,4 +1,4 @@
-.contactWrapper{
+.contactWrapper {
     position: relative;
     display: flex;
     justify-content: center;
@@ -7,54 +7,138 @@
     transition: all 0.3s;
     height: 749px;
     overflow: hidden;
-    .arrowTopWrapper{
+    .arrowTopWrapper {
         position: fixed;
         bottom: 100px;
-        right: 50px;
-        border: 1px solid #000000 ;
+        right: 20px;
+        height: 70px;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000000;
         border-radius: 50px;
-        img{
+        z-index: 999;
+        img {
             padding: 20px;
         }
-        &:active{
+        &:active {
             opacity: 0.5;
         }
     }
-    .img{
+    .img {
         position: absolute;
         width: 100%;
         z-index: -1;
     }
-    .contactColumns{
+    .contactColumns {
         z-index: 999;
         display: flex;
         justify-content: flex-start;
         background-color: transparent;
         gap: 30px;
         // align-items: center;
-        .contactColumnText{
+        .contactColumnText {
             font-weight: 500;
-font-size: 26px;
-line-height: 31px;
+            font-size: 26px;
+            line-height: 31px;
         }
-        :where(.css-dev-only-do-not-override-1i536d8).ant-input-textarea-show-count >.ant-input{
+        :where(.css-dev-only-do-not-override-1i536d8).ant-input-textarea-show-count > .ant-input {
             background-color: transparent;
         }
-        div{
+        div {
             z-index: 999;
         }
-        .inputs{
-            padding: 50px 0;
+        .inputs {
+            padding: 30px 0;
             z-index: 999;
             position: relative;
-            .btnAbsolute{
+            
+
+            .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+                border: 2px solid #79787A;
+                border-radius: 15px;
+            }
+            .btnAbsolute {
                 position: absolute;
                 right: 10px;
-                bottom: 60px;
+                bottom: 40px;
+                width: 92px;
             }
-            .btn{
+            .btn {
                 margin-top: 20px;
             }
         }
+    }
+}
+@media (max-width: 940px) {
+    .contactWrapper{
+        height: fit-content;
+        .img{
+            height: 100%;
+            // width: 100%;
+
+        }
+        .contactColumns{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width: 490px) {
+    .contactWrapper{
+        height: fit-content;
+        .arrowTopWrapper{
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            img{
+                // height: 40px;
+                size: 20px;
+            }
+        }
+        .img{
+            height: 100%;
+            // width: 100%;
+
+        }
+        .contactColumns{
+            display: flex;
+            flex-direction: column;
+            width: 345px;
+            justify-content: center;
+            .button{
+                width: 340px !important;
+            }
+            .inputs{
+                .inputWrapper{
+                    .input{
+                        .inputt{
+                            width: 345px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 500px){
+    .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+        width: 360px;
+    }
+}
+@media(max-width: 376px){
+    .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+        width: 330px;
+    }
+}
+@media(max-width: 320px){
+    .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+        padding-left: 10px;
+        width: 300px;
     }
 }

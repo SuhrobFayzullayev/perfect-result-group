@@ -1,8 +1,14 @@
 @import "../../assets/scss/variables.scss";
+.ant-dropdown {
+  z-index: 10000;
+}
 header {
   width: 100%;
   background-color: #000000;
   padding: 0 calc((100% - 1110px) / 2);
+  position: fixed;
+  z-index: 9999;
+  // margin-bottom: 90px;
 
   .header_wrapper {
     width: 100%;
@@ -31,8 +37,12 @@ header {
       .navbar_toggle {
         width: 26px;
         height: 26px;
-        background-color: #ffffff;
         display: none;
+        position: absolute;
+        transform: translate(-50%, 0);
+        left: 18px;
+        margin-left: 18px;
+        cursor: pointer;
         .image {
           width: 100%;
           height: 100%;
@@ -60,20 +70,92 @@ header {
           .mobile_content {
             display: none;
           }
+<<<<<<< HEAD
           
+=======
+          li {
+            &:last-child {
+              margin-right: 0;
+            }
+            a {
+              font-family: "Montserrat", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 100%;
+              color: #ffffff;
+              text-decoration: none;
+              position: relative;
+              transition: 0.3s linear all;
+              &::before {
+                display: none;
+                content: "";
+                position: absolute;
+                top: calc(100% + 4px);
+                width: calc(100% + 10px);
+                left: -3px;
+                bottom: 4px;
+                height: 5px;
+                border-radius: 5px;
+                background: linear-gradient(
+                  270.11deg,
+                  #4542ff 30.39%,
+                  #ffffff 81.42%
+                );
+                transition: 0.3s linear all;
+              }
+              &:hover {
+                font-family: "Montserrat", sans-serif;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 18px;
+                line-height: 100%;
+                color: #ffffff;
+                &::before {
+                  display: block;
+                }
+              }
+            }
+          }
+>>>>>>> 1dd5a0994a43bb0037129d7af53935f964664186
         }
       }
       .lang_dropdown {
-        font-family: "Montserrat", sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 100%;
-        color: #ffffff;
+        z-index: 10000;
+        .ant-dropdown-trigger {
+          .ant-space {
+            .ant-space-item {
+              font-family: "Montserrat", sans-serif;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 100%;
+              color: #ffffff;
+            }
+          }
+        }
+        // .ant-dropdown-open {
+        //   padding: 5px 0;
+        //   background: #ffffff;
+        //   border-radius: 5px 5px 0 0;
+        //   .ant-space {
+        //     padding-bottom: 4px;
+        //     border-bottom: 0.5 solid #000000;
+        //     .ant-space-item {
+        //       font-family: "Montserrat", sans-serif;
+        //       font-style: normal;
+        //       font-weight: 400;
+        //       font-size: 18px;
+        //       line-height: 100%;
+        //       color: #000000;
+        //     }
+        //   }
+        // }
       }
       .contact_btn {
         width: 146px;
         height: 48px;
+        z-index: 4;
         button {
           width: 100%;
           height: 100%;
@@ -165,8 +247,17 @@ header {
 }
 @media (max-width: 700px) {
   header {
-    position: relative;
+    // position: relative;
     .header_wrapper {
+      .left_header {
+        background: none;
+        .image {
+          background: none;
+          position: absolute;
+          transform: translate(-50%, 0);
+          left: 50%;
+        }
+      }
       .right_header {
         gap: 25px;
         nav {
@@ -174,29 +265,30 @@ header {
           overflow: none;
           position: fixed;
           z-index: 4;
-          right: -1000px;
-          top: 0;
-          background: rgba(0, 0, 0, 0.7);
+          left: -1000px;
+          top: 90px;
+          // background: rgba(0, 0, 0, 0.7);
           height: 100vh;
           width: 100vw;
           display: flex;
           justify-content: flex-start;
-          align-items: flex-end;
+          align-items: flex-start;
           flex-direction: column;
           gap: 20px;
           width: 100vw;
+          z-index: 999;
           ul {
+            padding: 10px 18px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             justify-content: flex-start;
-            width: 400px;
-            padding: 10px;
-            gap: 15px;
+            width: 340px;
+            gap: 16px;
             background: #000000;
             height: 100%;
-            // min-height: 100vh;
             overflow: auto;
+            border-bottom-right-radius: 20px;
             &::-webkit-scrollbar {
               width: 6px;
             }
@@ -217,35 +309,14 @@ header {
               align-items: center;
               justify-content: center;
               position: absolute;
-              right: 5px;
+              left: 300px;
               top: 5px;
-            }
-            > h1 {
-              display: block;
-              font-family: "Montserrat", sans-serif;
-              font-style: normal;
-              font-weight: 700;
-              font-size: 50px;
-              line-height: 100%;
-              display: flex;
-              align-items: center;
-              justify-content: flex-start;
-              color: #ffffff;
-              gap: 15px;
-              span {
-                background: linear-gradient(
-                  180deg,
-                  #2b13bb 45.83%,
-                  #ffffff 83.85%
-                );
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-                text-fill-color: transparent;
-              }
             }
             li {
               list-style-type: none;
+              padding-bottom: 4px;
+              border-bottom: 0.5px solid #ffffff;
+              width: 60%;
               a {
                 font-family: "Montserrat", sans-serif;
                 font-style: normal;
@@ -253,7 +324,14 @@ header {
                 font-size: 16px;
                 line-height: 100%;
                 color: #ffffff;
-                text-decoration: none;
+                transition: 0.3s linear all;
+                &:hover {
+                  color: #4542ff;
+                  font-weight: bold;
+                  &::before {
+                    display: none;
+                  }
+                }
               }
             }
             .mobile_content {
@@ -315,7 +393,7 @@ header {
           display: block;
         }
         .activeMenu {
-          right: 0;
+          left: 0;
         }
       }
     }
@@ -323,18 +401,37 @@ header {
 }
 @media (max-width: 500px) {
   header {
+    padding: 0px 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 44px;
     .header_wrapper {
+      height: 100%;
       .left_header {
-        height: 75px;
+        height: 100%;
         width: 85px;
+
+        .image {
+          height: auto;
+          svg {
+            width: 36px;
+            height: 28px;
+          }
+        }
       }
       .right_header {
         gap: 15px;
         nav {
+          top: 44px;
           ul {
-            width: 320px;
-            > h1 {
-              font-size: 40px;
+            width: 192px;
+            li {
+              a {
+                font-size: 10px;
+              }
+            }
+            .closing_icon {
+              left: 160px;
             }
             .mobile_content {
               a {
@@ -358,6 +455,27 @@ header {
         }
         .contact_btn {
           height: 40px;
+          display: none;
+        }
+        .navbar_toggle {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .lang_dropdown {
+          z-index: 4;
+          .ant-dropdown-trigger {
+            .ant-space {
+              .ant-space-item {
+                font-family: "Montserrat", sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 100%;
+                color: #ffffff;
+              }
+            }
+          }
         }
       }
     }
@@ -368,57 +486,10 @@ header {
     .header_wrapper {
       .left_header {
         width: 55px;
-        height: 50px;
         a {
           svg {
             width: 45px;
             height: 45px;
-          }
-        }
-      }
-      .right_header {
-        nav {
-          ul {
-            gap: 7px;
-            width: 270px;
-            > h1 {
-              font-size: 30px;
-            }
-            li {
-              a {
-                font-size: 14px;
-                &::before {
-                  height: 2px;
-                  top: calc(100% + 2px);
-                }
-              }
-            }
-            .mobile_content {
-              margin-top: 6px;
-              a {
-                .for_image {
-                  width: 15px;
-                  height: 15px;
-                }
-                h2 {
-                  font-size: 13px;
-                }
-                .for_map {
-                  width: 45px;
-                  height: 30px;
-                  border-radius: 6px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  button {
-                    font-size: 14px;
-                    width: 42px;
-                    height: 28px;
-                    border-radius: 5px;
-                  }
-                }
-              }
-            }
           }
         }
       }
@@ -431,7 +502,7 @@ header {
       gap: 15px;
       .left_header {
         width: 50px;
-        height: 47px;
+        // height: 47px;
       }
     }
   }

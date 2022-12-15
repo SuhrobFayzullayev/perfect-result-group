@@ -26,7 +26,25 @@ const Footer = () => {
         <div className="right_footer">
           <nav>
             <ul>
+<<<<<<< HEAD
               <HeaderTiltle />
+=======
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/portfolio">Portfolio</Link>
+              </li>
+              <li>
+                <Link to="/services">Services</Link>
+              </li>
+              <li>
+                <Link to="/vacancies">Vacancies</Link>
+              </li>
+>>>>>>> 1dd5a0994a43bb0037129d7af53935f964664186
             </ul>
           </nav>
           <div className="for_social_media">

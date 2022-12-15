@@ -45,3 +45,14 @@
     }
 }
 }
+@media (max-width: 490px) {
+    .inputWrapper{
+        .input{
+            .inputt{
+                width: 100%;
+                max-width: 100%;
+                min-width: 345px !important;
+            }
+        }
+    }
+}

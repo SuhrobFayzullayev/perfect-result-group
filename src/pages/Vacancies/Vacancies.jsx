@@ -7,7 +7,7 @@ import MySlider from "./components/MySlider/MySlider";
 function Vacancies() {
   return (
     <div className="vacancies">
-      <Hi isAbout={false} />
+      <Hi name={"VACANCIES"} />
       <Name name={"Vacancies"} />
       <Vacancy />
       <MySlider />
