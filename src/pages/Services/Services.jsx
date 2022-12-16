@@ -12,6 +12,7 @@ import { ReactComponent as LogoBranding } from "../../assets/img/logoBranding.sv
 import { ReactComponent as Crm } from "../../assets/img/crm.svg";
 import Hi from "../../components/Hi/Hi";
 import "./index.scss";
+import Name from "../../components/ComponentName";
 
 function Services(props) {
   const onChange = (key) => {
@@ -33,8 +34,8 @@ function Services(props) {
   return (
     <div>
       <Hi name={hiValue} />
+      <Name name={"Services"} />
       <div className="main_content">
-        <div className="heading">Services</div>
         <Tabs
           defaultActiveKey="1"
           onChange={onChange}
