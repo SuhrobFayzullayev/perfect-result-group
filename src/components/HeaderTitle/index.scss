@@ -1,32 +1,28 @@
 .active::before {
-    content: "";
-    position: absolute;
-    top: calc(100% + 4px);
-    width: calc(100% + 10px);
-    left: -3px;
-    bottom: 4px;
-    height: 5px;
-    border-radius: 5px;
-    background: linear-gradient(
-      270.11deg,
-      #4542ff 30.39%,
-      #ffffff 81.42%
-    );
-    transition: 0.3s linear all;
-    background-size: 200% 200%;
-    animation: gradient 5s linear infinite;
+  content: "";
+  position: absolute;
+  top: calc(100% + 4px);
+  width: calc(100% + 10px);
+  left: -3px;
+  bottom: 4px;
+  height: 5px;
+  border-radius: 5px;
+  background: linear-gradient(270.11deg, #4542ff 30.39%, #ffffff 81.42%);
+  transition: 0.3s linear all;
+  background-size: 200% 200%;
+  animation: gradient 5s linear infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 0%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  50% {
+    background-position: 100% 0%;
   }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 li {
   width: 73px;
   display: flex;
@@ -66,11 +62,7 @@ li {
       bottom: 4px;
       height: 5px;
       border-radius: 5px;
-      background: linear-gradient(
-        270.11deg,
-        #4542ff 30.39%,
-        #ffffff 81.42%
-      );
+      background: linear-gradient(270.11deg, #4542ff 30.39%, #ffffff 81.42%);
       transition: 0.3s linear all;
     }
   }
