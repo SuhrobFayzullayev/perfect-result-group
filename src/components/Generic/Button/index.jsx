@@ -13,6 +13,7 @@ const Button = ({
   radius,
   icon,
   hoverColor,
+  submit,
   hoverBackground,
   hoverBorder
 }) => {
@@ -30,7 +31,31 @@ const Button = ({
     <>
     <div className="genericRelativer">
     <img className='buttonImg' src={icon} alt="" />
-      <button
+      {submit ?
+        <button
+        className="buttonn"
+        onClick={onClick}
+        style={{
+          gap: img ? `8px` : "0",
+          display: 'flex',
+          justifyContent: icon ?  "flex-start" : "",
+          paddingLeft: icon ? `50px` : "0px",
+          height: height ? `${height}px` : `55px`,
+          width:width ? `${width}px` : '100%',
+          maxWidth: width ? `${width}px` : '128px',
+          minWidth: "68px",
+          border: isHovering ? `${hoverBorder}` : `${border}`,
+          borderRadius: radius ? `${radius}` : `15px`,
+          color: isHovering ? `${hoverColor}` : `${color}`,
+          backgroundColor: isHovering ? `${hoverBackground}` : `${background}`,
+        }}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        >
+        <img src={img} alt="" />{txt}
+      </button>
+      :
+        <button
         className="button"
         onClick={onClick}
         style={{
@@ -52,6 +77,7 @@ const Button = ({
         >
         <img src={img} alt="" />{txt}
       </button>
+      }
         </div>
     </>
   );

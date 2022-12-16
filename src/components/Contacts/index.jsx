@@ -3,9 +3,9 @@ import Button from "../Generic/Button";
 import "./style.scss";
 import image from "./../../assets/img/contactBackground.png";
 // import { Input } from "antd";
-import location from "./../../assets/icon/location.svg";
-import phone from "./../../assets/icon/call.svg";
-import email from "./../../assets/icon/email.svg";
+import location from "./../../assets/icon/locationBlack.svg";
+import phone from "./../../assets/icon/callBlack.svg";
+import email from "./../../assets/icon/emailBlack.svg";
 import arrowTop from "./../../assets/icon/arrowTop.svg";
 import Name from "../ComponentName";
 import TextField from "@mui/material/TextField/TextField";
@@ -20,7 +20,7 @@ const Contact = () => {
   };
   return (
     <>
-      <Name name={"Contact"} />
+      <Name id='contact' name={"Contact"} />
       <div className="contactWrapper">
         <img className="img" src={image} alt="" />
         <div className="contactColumns">
@@ -75,14 +75,14 @@ const Contact = () => {
                   href="https://www.google.com/maps/place/%D0%A7%D0%B8%D0%BB%D0%B0%D0%BD%D0%B7%D0%B0%D1%80-3,+%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82+100115,+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/@41.2844818,69.2188239,16z/data=!3m1!4b1!4m5!3m4!1s0x38ae8a45cc5c3f35:0x929c69dffb5b8141!8m2!3d41.2855934!4d69.223683"
                   target="blank"
                 >
-                  <Button
+                  <button className="contactMapButton"
                     background={"white"}
                     color={"black"}
                     txt={"Map"}
                     height={38}
                     border={"none"}
-                    width={90}
-                  />
+                    width={"90px"}
+                  >Map</button>
                 </a>
               </div>
             </div>
@@ -121,6 +121,7 @@ const Contact = () => {
               </a>
               <div className="btn">
                 <Button
+                submit={true}
                   background={"#2B13BB"}
                   border={"none"}
                   color={"white"}

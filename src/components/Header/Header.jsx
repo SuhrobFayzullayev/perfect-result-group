@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/icon/logo.svg";
 import {ReactComponent as NavToggle} from "../../assets/icon/sideMenu.svg";
 import { DownOutlined } from "@ant-design/icons";
@@ -24,6 +24,13 @@ const Header = () => {
       key: "2",
     },
   ];
+  const location = useLocation()
+  const onHandleContact=()=>{
+    location.pathname==="/"?
+    document.documentElement.scrollTop = 2400
+    :
+    console.log("go to home");
+  }
 
   const handleMenuToggle = () => {
     setMenu((prev) => !prev);
@@ -99,9 +106,11 @@ const Header = () => {
                 </a>
                 </Dropdown>
             </div>
-            <div className="contact_btn">
+            {/* <a href="#!"> */}
+            <div onClick={()=>onHandleContact()} className="contact_btn">
                 <button>Contact</button>
             </div>
+            {/* </a> */}
             <div className="navbar_toggle" onClick={() => handleMenuToggle()}>
                 <NavToggle />
             </div>
