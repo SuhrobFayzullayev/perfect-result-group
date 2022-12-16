@@ -35,7 +35,7 @@ function Services(props) {
     <div>
       <Hi name={hiValue} />
       <Name name={"Services"} />
-      <div className="main_content">
+      <div className="main_content globalWrapper">
         <Tabs
           defaultActiveKey="1"
           onChange={onChange}
@@ -53,16 +53,14 @@ function Services(props) {
                     <p>
                       A website is a unique addres Site or website means website
                       in English: web - "spider web, network" and site -"place,
-                      segment, part of a network"
-                      <br />
-                      <br />A site is a collection of linked web pagesusing a
-                      single domain name. Websites can be created by an
-                      individual, group, business or organization for various
-                      purposes. All public websites make up the world wide web.
-                      Simply put, a site is an address on the Internet that
-                      contains some information (text, video, photos, documents,
-                      music, etc.). And theInternet is a collection of these
-                      addresses.
+                      segment, part of a network" A site is a collection of
+                      linked web pagesusing a single domain name. Websites can
+                      be created by an individual, group, business or
+                      organization for various purposes. All public websites
+                      make up the world wide web. Simply put, a site is an
+                      address on the Internet that contains some information
+                      (text, video, photos, documents, music, etc.). And
+                      theInternet is a collection of these addresses.
                     </p>
                   </div>
                 </div>
@@ -82,20 +80,18 @@ function Services(props) {
                       Anyone who is involved in website development, programming
                       or any field of informatics will certainly come across
                       concepts such as "domain", "hosting", "server". These
-                      concepts are explained in detail in the article.
-                      <br />
-                      <br />
-                      After preparing the site on our personal computer, we need
-                      to place it on the Internet. If you don't post it online,
-                      no one will know about your site. But it's not the end of
-                      the web, how can people find your site? - a question
-                      arises. Therefore, it is necessary to make it possible for
-                      people to find the site that you put on the Internet, but
-                      we will talk about this in the next lessons. First, let's
-                      talk about putting the site on the Internet. In general,
-                      we will learn about how sites are located on the Internet
-                      and how sites are named. To put any site on the Internet,
-                      a domain and hosting are taken.
+                      concepts are explained in detail in the article. After
+                      preparing the site on our personal computer, we need to
+                      place it on the Internet. If you don't post it online, no
+                      one will know about your site. But it's not the end of the
+                      web, how can people find your site? - a question arises.
+                      Therefore, it is necessary to make it possible for people
+                      to find the site that you put on the Internet, but we will
+                      talk about this in the next lessons. First, let's talk
+                      about putting the site on the Internet. In general, we
+                      will learn about how sites are located on the Internet and
+                      how sites are named. To put any site on the Internet, a
+                      domain and hosting are taken.
                     </p>
                   </div>
                 </div>
@@ -116,12 +112,9 @@ function Services(props) {
                       applications type of design in which web user interfaces
                       are designed. It is relative It is a young profession and
                       has not yet spread widely in Uzbekistan. Big on the
-                      internet
-                      <br />
-                      <br />
-                      The competition to reach a large number of users is
-                      driving the demand for web designers. Web design involves
-                      many different skills and disciplines involved in
+                      internet. The competition to reach a large number of users
+                      is driving the demand for web designers. Web design
+                      involves many different skills and disciplines involved in
                       producing and maintaining websites. Web design includes
                       various fields: user interface design (UI design);
                       authorship, including standardized code and proprietary
@@ -146,8 +139,6 @@ function Services(props) {
                       Search engine optimization (SEO - search engine
                       optimization) is the process of mproving the quality and
                       quantity of website traffic from search engines to a
-                      <br />
-                      <br />
                       website or webpage.[1] SEO targets unpaid traffic (known
                       as "natural" or "organic" results) rather than direct
                       traffic or paid traffic. Unpaid traffic can come from a
@@ -180,18 +171,15 @@ function Services(props) {
                       and inconvenient for customers. Many products can be
                       easily purchased online. Internet store is a form of
                       electronic commerce, a website designed for selling goods
-                      via the Internet.
-                      <br />
-                      <br />
-                      Customers of the online store can choose goods online (on
-                      a computer or smartphone), place an order for purchase,
-                      choose payment and delivery methods (and pay through an
-                      electronic payment system). The goods in the online store
-                      are presented in the form of a catalog (just like shelves
-                      in a regular store), divided into different categories and
-                      have a product photo, price, brief information and other
-                      characteristics (just like departments in a regular
-                      store).
+                      via the Internet. Customers of the online store can choose
+                      goods online (on a computer or smartphone), place an order
+                      for purchase, choose payment and delivery methods (and pay
+                      through an electronic payment system). The goods in the
+                      online store are presented in the form of a catalog (just
+                      like shelves in a regular store), divided into different
+                      categories and have a product photo, price, brief
+                      information and other characteristics (just like
+                      departments in a regular store).
                     </p>
                   </div>
                 </div>
@@ -211,8 +199,6 @@ function Services(props) {
                       A mobile application or app is a computer program or
                       software application designed to run on a mobile device
                       such as a phone, tablet, or watch. Mobile applications
-                      <br />
-                      <br />
                       often stand in contrast to desktop applications which are
                       designed to run on desktop computers, and web applications
                       which run in mobile web browsers rather than directly on
@@ -243,20 +229,17 @@ function Services(props) {
                     <p>
                       Advertising (from the Latin "reklamo" - to shout) -
                       information about the quality of goods, benefits from
-                      their purchase; special information
-                      <br />
-                      <br />
-                      distributed about legal entities and individuals or
-                      products for the purpose of direct or indirect profit
-                      (income). Advertising is considered a component of
-                      marketing and affects the formation of demand and consumer
-                      taste. Advertising is carried out for the purposes of
-                      creating an image of the enterprise (long-term effect),
-                      increasing current sales (short-term effect), helping
-                      buyers decide what to buy and why they need to buy it, and
-                      other purposes. The main task of advertising is to
-                      interest the customer, not to lose customers and to expand
-                      them.
+                      their purchase; special information distributed about
+                      legal entities and individuals or products for the purpose
+                      of direct or indirect profit (income). Advertising is
+                      considered a component of marketing and affects the
+                      formation of demand and consumer taste. Advertising is
+                      carried out for the purposes of creating an image of the
+                      enterprise (long-term effect), increasing current sales
+                      (short-term effect), helping buyers decide what to buy and
+                      why they need to buy it, and other purposes. The main task
+                      of advertising is to interest the customer, not to lose
+                      customers and to expand them.
                     </p>
                   </div>
                 </div>
@@ -300,12 +283,9 @@ function Services(props) {
                       management of customer relations It is widely used in
                       developed countries. Every firm, enterprise does the
                       necessary work to maintain constant contact with its
-                      customers.
-                      <br />
-                      <br />
-                      the Latin "reklamo" - to shout) - information about the
-                      quality of goods, benefits from their purchase; special
-                      information distributed about legal entities and
+                      customers. the Latin "reklamo" - to shout) - information
+                      about the quality of goods, benefits from their purchase;
+                      special information distributed about legal entities and
                       individuals or products for the purpose of direct or
                       indirect profit (income). Advertising is considered a
                       component of marketing and affects the formation of demand
@@ -336,16 +316,13 @@ function Services(props) {
                       (created through a primitive form of artificial
                       intelligence)arecapable of performing a variety of
                       specified tasks and are created for a wide variety of
-                      activities.[1]
-                      <br />
-                      <br />
-                      There are also entertaining and interactive bots on the
-                      Internet that can perform research and data collection
-                      functions on specific industries and topics. Special bots
-                      can download and send various files (music, books, movies,
-                      data, programs) from social networks and the Internet,
-                      while others perform sales or marketing research. They
-                      have the following types;
+                      activities.[1] There are also entertaining and interactive
+                      bots on the Internet that can perform research and data
+                      collection functions on specific industries and topics.
+                      Special bots can download and send various files (music,
+                      books, movies, data, programs) from social networks and
+                      the Internet, while others perform sales or marketing
+                      research. They have the following types;
                     </p>
                   </div>
                 </div>

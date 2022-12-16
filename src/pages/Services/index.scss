@@ -4,22 +4,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding-bottom: 200px;
   gap: 50px;
-  .heading {
-    padding: 0 calc((100% - 1110px) / 2);
-    padding-bottom: 30px;
-    border-bottom: 4px solid rgba($color: #2b13bb, $alpha: 0.5);
-    width: 100%;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    color: #2b13bb;
-  }
+  padding-bottom: 200px !important;
   .ant-tabs {
-    padding: 0 calc((100% - 1110px) / 2);
     width: 100%;
     .ant-tabs-nav {
       width: 100%;
@@ -33,8 +20,7 @@
         overflow-x: scroll;
         padding-bottom: 15px;
         &::-webkit-scrollbar {
-          // width: 3px;
-          height: 10px;
+          height: 5px;
           margin-top: 10px;
         }
         &::-webkit-scrollbar-track {
@@ -42,7 +28,6 @@
           border-radius: 10px;
         }
         &::-webkit-scrollbar-thumb {
-          // background: linear-gradient(270.11deg, #ffffff 30.39%, #4542ff 81.2%);
           background-color: #2b13bb;
           border-radius: 10px;
         }
@@ -54,8 +39,7 @@
             font-family: "Montserrat", sans-serif;
             font-style: normal;
             font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
+            font-size: 18px;
             color: #000000;
             opacity: 0.5;
           }
@@ -71,10 +55,9 @@
             font-family: "Montserrat", sans-serif;
             font-style: normal;
             font-weight: 700;
-            font-size: 24px;
+            font-size: 18px;
             line-height: 100%;
             color: #2b13bb;
-            // padding-bottom: 8px;
             border-radius: 5px;
             opacity: 1;
           }
@@ -87,11 +70,7 @@
             left: -2px;
             height: 5px;
             border-radius: 5px;
-            background: linear-gradient(
-              270.11deg,
-              #4542ff 30.39%,
-              #ffffff 81.42%
-            );
+            background: linear-gradient(270.11deg, #4542ff 30.39%, #ffffff 81.42%);
             transition: 0.3s linear all;
           }
         }
@@ -105,45 +84,36 @@
           width: 100%;
           .content {
             width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
             gap: 50px;
             .image {
               background: rgb(255, 255, 255);
               border-radius: 25px;
-              height: 611px;
-              width: 100%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
+              float: left;
+              max-width: 500px;
+              margin-right: 20px;
+              img,
+              svg {
+                width: 100%;
+              }
             }
             .info {
-              display: flex;
-              align-items: flex-start;
-              justify-content: flex-start;
-              gap: 24px;
-              flex-direction: column;
               h1 {
                 width: 100%;
                 text-align: center;
                 font-family: "Montserrat", sans-serif;
                 font-style: normal;
                 font-weight: 700;
-                font-size: 40px;
+                font-size: 25px;
                 line-height: 50px;
                 color: #000000;
               }
               p {
                 width: 100%;
-                text-align: center;
                 font-family: "Montserrat", sans-serif;
                 font-style: normal;
                 font-weight: 400;
-                font-size: 26px;
+                font-size: 20px;
                 line-height: 50px;
-                text-align: center;
                 color: #000000;
               }
             }
@@ -323,11 +293,7 @@
                 left: -2px;
                 height: 2px;
                 border-radius: 5px;
-                background: linear-gradient(
-                  270.11deg,
-                  #4542ff 30.39%,
-                  #ffffff 81.42%
-                );
+                background: linear-gradient(270.11deg, #4542ff 30.39%, #ffffff 81.42%);
                 transition: 0.3s linear all;
               }
             }
