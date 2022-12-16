@@ -11,7 +11,7 @@ const Home = () => {
       <Hi name={"home"} />
       <HomePortfolio />
       <Client />
-      <Contact />
+      <Contact id={"contact"}/>
     </>
   );
 };

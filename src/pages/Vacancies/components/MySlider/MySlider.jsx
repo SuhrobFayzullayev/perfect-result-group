@@ -1,7 +1,7 @@
 import React from "react";
 import "./MySlider.scss";
 
-import { Navigation } from "swiper";
+import { FreeMode, Navigation } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -53,6 +53,7 @@ function MySlider() {
           pagination={{
             clickable: true,
           }}
+          initialSlide={1}
           breakpoints={{
             400: {
               slidesPerView: 1,
