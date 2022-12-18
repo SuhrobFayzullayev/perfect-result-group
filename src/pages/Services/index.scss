@@ -70,7 +70,11 @@
             left: -2px;
             height: 5px;
             border-radius: 5px;
-            background: linear-gradient(270.11deg, #4542ff 30.39%, #ffffff 81.42%);
+            background: linear-gradient(
+              270.11deg,
+              #4542ff 30.39%,
+              #ffffff 81.42%
+            );
             transition: 0.3s linear all;
           }
         }
@@ -131,24 +135,27 @@
     }
   }
 }
+// bu globalWrapper pagelarda eng katta konteynerga chaqiriladi
+.globalWrapper {
+  padding: 0 calc((100% - 1110px) / 2);
+  width: 100%;
+  // max-width: 1440px;
+  margin: 0 auto;
+  // padding: 0 130px;
+}
 @media (max-width: 1460px) {
-  .main_content {
-    .heading {
-      padding: 0 165px 30px 165px;
-    }
-    .ant-tabs {
-      padding: 30px 165px;
-    }
+  .globalWrapper {
+    padding: 0 165px;
   }
 }
 @media (max-width: 1280px) {
-  .main_content {
-    .heading {
-      padding: 0 100px 30px 100px;
-    }
-    .ant-tabs {
-      padding: 30px 100px;
-    }
+  .globalWrapper {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 1100px) {
+  .globalWrapper {
+    padding: 0 25px;
   }
 }
 @media (max-width: 1160px) {
@@ -159,12 +166,15 @@
           .ant-tabs-tabpane {
             .content {
               .image {
-                height: 500px;
+                height: 350px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 img {
-                  width: 700px;
+                  width: 90%;
                 }
                 svg {
-                  width: 700px;
+                  width: 90%;
                 }
               }
             }
@@ -174,31 +184,46 @@
     }
   }
 }
-@media (max-width: 1280px) {
+@media (max-width: 1000px) {
   .main_content {
-    .heading {
-      padding: 0 25px 30px 25px;
-    }
     .ant-tabs {
-      padding: 0px 25px;
+      .ant-tabs-content-holder {
+        .ant-tabs-content {
+          .ant-tabs-tabpane {
+            .content {
+              .info {
+                h1 {
+                  font-size: 21px;
+                  line-height: 40px;
+                }
+                p {
+                  line-height: 30px;
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
 @media (max-width: 832px) {
   .main_content {
+    padding: 0px 10px;
     .ant-tabs {
-      padding: 0px 10px;
       .ant-tabs-content-holder {
         .ant-tabs-content {
           .ant-tabs-tabpane {
             .content {
               .image {
-                height: 400px;
+                height: 300px;
+                max-width: 380px;
                 img {
-                  width: 550px;
+                  width: 90%;
                 }
                 svg {
-                  width: 550px;
+                  width: 90%;
                 }
               }
             }
@@ -223,13 +248,17 @@
               .info {
                 gap: 15px;
                 h1 {
-                  font-size: 30px;
-                  line-height: 30px;
+                  // font-size: 30px;
+                  // line-height: 30px;
                 }
                 p {
-                  font-size: 18px;
-                  line-height: 30px;
+                  // font-size: 18px;
+                  // line-height: 30px;
                 }
+              }
+              .image {
+                max-width: 300px;
+                height: 230px;
               }
             }
           }
@@ -242,7 +271,7 @@
   .main_content {
     padding-bottom: 100px;
     .ant-tabs {
-      padding: 0px 10px;
+      // padding: 0px 10px;
       .ant-tabs-nav {
         margin-bottom: 30px;
       }
@@ -252,18 +281,24 @@
             .content {
               gap: 25px;
               .image {
-                height: 250px;
+                height: 200px;
+                max-width: 220px;
                 img {
-                  width: 350px;
+                  // width: 350px;
+                  width: 90%;
                 }
                 svg {
-                  width: 350px;
+                  // width: 350px;
+                  width: 90%;
                 }
               }
               .info {
                 gap: 10px;
+                h1 {
+                  line-height: 30px;
+                }
                 p {
-                  line-height: 40px;
+                  // line-height: 40px;
                 }
               }
             }
@@ -276,7 +311,8 @@
 @media (max-width: 500px) {
   .main_content {
     gap: 12px;
-    padding-bottom: 50px;
+    padding: 0 10px !important;
+    padding-bottom: 50px !important;
     .heading {
       font-size: 14px;
       line-height: 17px;
@@ -284,7 +320,7 @@
       border-bottom: 1px solid rgba(#0500ff, 1);
     }
     .ant-tabs {
-      padding: 0px 10px;
+      // padding: 0px 10px;
       .ant-tabs-nav {
         margin-bottom: 30px;
         .ant-tabs-nav-wrap {
@@ -321,7 +357,11 @@
                 left: -2px;
                 height: 2px;
                 border-radius: 5px;
-                background: linear-gradient(270.11deg, #4542ff 30.39%, #ffffff 81.42%);
+                background: linear-gradient(
+                  270.11deg,
+                  #4542ff 30.39%,
+                  #ffffff 81.42%
+                );
                 transition: 0.3s linear all;
               }
             }
@@ -338,17 +378,23 @@
           .ant-tabs-tabpane {
             .content {
               gap: 20px;
+              // padding-top: 50px;
               .image {
-                height: 200px;
+                height: 280px;
+                max-width: inherit;
+                width: 100%;
+                margin-bottom: 20px;
                 img {
-                  width: 260px;
+                  width: 85%;
                 }
                 svg {
-                  width: 260px;
+                  width: 85%;
                 }
               }
               .info {
                 gap: 10px;
+                margin-top: 20px;
+                position: inherit;
                 h1 {
                   font-family: "Montserrat", sans-serif;
                   font-style: normal;
@@ -377,9 +423,36 @@
 @media (max-width: 400px) {
   .main_content {
     padding-bottom: 100px;
-    // .heading {
-    //   font-size: 20px;
-    //   padding-bottom: 10px;
-    // }
+    .ant-tabs {
+      .ant-tabs-content-holder {
+        .ant-tabs-content {
+          .ant-tabs-tabpane {
+            .content {
+              .image {
+                height: 230px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 330px) {
+  .main_content {
+    padding-bottom: 100px;
+    .ant-tabs {
+      .ant-tabs-content-holder {
+        .ant-tabs-content {
+          .ant-tabs-tabpane {
+            .content {
+              .image {
+                height: 190px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
