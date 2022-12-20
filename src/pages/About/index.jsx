@@ -5,6 +5,7 @@ import teamImage from "../../assets/img/TeamImage.png";
 import TeamCard from "../../components/AboutCards/TeamCard";
 import WorkFlowCard from "../../components/AboutCards/WorkFlowCard";
 import Hi from "../../components/Hi/Hi";
+import WorkFlow from "../../components/WorkFlow";
 
 const About = () => {
   const data = [
@@ -113,7 +114,12 @@ const About = () => {
 
   return (
     <>
-      <Hi name={"ABOUT TEAM"} />
+      <Hi isAbout={true} />
+      <div>
+        <div>
+          <WorkFlow />
+        </div>
+      </div>
       <div className={styles.title}>
         <h1>About Workflow</h1>
       </div>

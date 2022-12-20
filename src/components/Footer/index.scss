@@ -202,6 +202,16 @@ footer {
         }
       }
     }
+    .footer_top {
+      .right_footer {
+        gap: 20px;
+      }
+      .left_footer {
+        .for_company {
+          font-size: 47px;
+        }
+      }
+    }
   }
 }
 @media (max-width: 1280px) {
@@ -252,6 +262,19 @@ footer {
     }
     .footer_bottom {
       padding: 20px 25px;
+    }
+  }
+}
+@media (max-width: 980px) {
+  footer {
+    .footer_top {
+      .right_footer {
+        nav {
+          ul {
+            gap: 8px;
+          }
+        }
+      }
     }
   }
 }
@@ -490,15 +513,34 @@ footer {
     }
   }
 }
+@media (max-width: 430px) {
+  footer {
+    .footer_top {
+      .right_footer {
+        nav {
+          ul {
+            display: flex;
+            gap: 10px;
+            li {
+              padding-right: 0;
+              width: 65px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 374px) {
   footer {
     .footer_top {
       .right_footer {
         nav {
           ul {
-            gap: 8px;
+            gap: 5px;
             li {
-              padding-right: 8px;
+              width: 60px;
+              padding-right: 5px;
             }
           }
         }
@@ -511,6 +553,23 @@ footer {
       > div {
         &:last-child {
           position: inherit;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 345px) {
+  footer {
+    .footer_top {
+      .right_footer {
+        nav {
+          ul {
+            gap: 0;
+            li {
+              padding-right: 0px;
+              border-right: 0;
+            }
+          }
         }
       }
     }

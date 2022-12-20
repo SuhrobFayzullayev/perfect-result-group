@@ -9,6 +9,8 @@ function Hi({ name }) {
     { id: 2, name: "Experience", number: "1 years" },
     { id: 3, name: "Active clients", number: "16" },
   ];
+  const width = window.innerWidth;
+
   return (
     <div className="hi">
       <div className="hi__title title">
@@ -21,7 +23,10 @@ function Hi({ name }) {
           loop
         ></video>
         <div className="title__body">
-          <h1 className="title__title">PERFECT RESULT</h1>
+          <h1 className="title__title">
+            <span className="title__left">PERFECT</span>{" "}
+            <span className="title__right">RESULT</span>
+          </h1>
           <div className="title__line"></div>
           {String(name).toLocaleLowerCase() !== "home" && (
             <h2 className="title__name">{name}</h2>
@@ -37,7 +42,7 @@ function Hi({ name }) {
                 the main market that focuses on its customers and creates
                 favorable conditions for cooperation.
               </p>
-              {window.innerWidth > 560 && (
+              {width > 560 && (
                 <div className="title__descr-decor">
                   <img src={circleText} alt="PERFECT RESULT" />
                 </div>
@@ -47,7 +52,7 @@ function Hi({ name }) {
         </div>
       </div>
 
-      {window.innerWidth <= 560 && (
+      {width <= 560 && (
         <div className="title-decor">
           <img src={circleTextSmall} alt="PERFECT RESULT" />
         </div>

@@ -27,3 +27,29 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 640px) {
+    .clients__flex {
+        margin: 0 auto;
+        width: 290px;
+    }
+    .clients__card {
+        opacity: 1;
+    }
+    .slick-dots {
+        li {
+            position: relative;
+        }
+        button::after {
+            background: #000;
+            width: 20px;
+            height: 5px;
+        }
+    }
+    .clients__card {
+        margin: 10px;
+    }
+    .swiper-pagination.swiper-pagination-bullets-dynamic.swiper-pagination-bullets {
+        bottom: 0;
+    }
+}
