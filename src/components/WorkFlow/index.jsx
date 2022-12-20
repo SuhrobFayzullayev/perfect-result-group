@@ -13,12 +13,12 @@ import { Language } from "../../services/lang";
 
 const WorkFlow = () => {
   const data = [
-    { id: 1, img: ImageSwiper, title: "Consultation" },
-    { id: 2, img: ImageSwiper, title: "Planning" },
-    { id: 3, img: ImageSwiper, title: "Prototyping" },
-    { id: 4, img: ImageSwiper, title: "Programming" },
-    { id: 5, img: ImageSwiper, title: "Testing" },
-    { id: 6, img: ImageSwiper, title: "Planning" },
+    { id: 1, img: ImageSwiper, title: Language("CONSULTATION") },
+    { id: 2, img: ImageSwiper, title: Language("PLANNING") },
+    { id: 3, img: ImageSwiper, title: Language("PROTOTYPING") },
+    { id: 4, img: ImageSwiper, title: Language("PROGRAMMING") },
+    { id: 5, img: ImageSwiper, title: Language("TESTING") },
+    { id: 6, img: ImageSwiper, title:  Language("PLANNING") },
   ];
 
   return (

@@ -3,6 +3,7 @@ import React from "react";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import Name from "../ComponentName";
 import "./portfolio.scss";
+import { Language } from "../../services/lang";
 
 const data = [
   {
@@ -18,7 +19,7 @@ const data = [
 export default function HomePortfolio() {
   return (
     <section id="section">
-      <Name name={"Portfolio"} />
+      <Name name={Language("PORTFOLIO")} />
       <div className="container component_name globalWrapper">
         <div className="box">
           {data.map((v, i) => (

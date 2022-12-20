@@ -9,6 +9,8 @@ import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 
+import { Language } from "../../services/lang";
+
 function Client() {
   const data = [
     {
@@ -64,7 +66,7 @@ function Client() {
 
   return (
     <div className="clients">
-      <Name name={"Client"} />
+      <Name name={Language("CLIENT")} />
       {width > 640 && (
         <div className="clients__container">
           {data.map((item) => {

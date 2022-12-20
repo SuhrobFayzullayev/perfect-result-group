@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./style.module.scss";
 
+
+
 const WorkFlowCard = ({ info }) => {
   return (
     <div className={styles.container}>

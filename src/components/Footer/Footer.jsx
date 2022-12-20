@@ -10,6 +10,7 @@ import { ReactComponent as Email_icon } from "../../assets/icon/email.svg";
 import { ReactComponent as Location_icon } from "../../assets/icon/location.svg";
 import { HeaderTiltle } from "../HeaderTitle/HeaderTiltle";
 import "./index.scss";
+import { Language } from "../../services/lang";
 
 const Footer = () => {
   return (
@@ -76,9 +77,9 @@ const Footer = () => {
             <div className="for_image">
               <Location_icon />
             </div>
-            <pre>Map: Toshkent chilanzar 1 </pre>
+            <pre>{Language("MAP")}: Toshkent chilanzar 1 </pre>
             <div className="for_map">
-              <button>Map</button>
+              <button>{Language("MAP")}</button>
             </div>
           </a>
         </div>

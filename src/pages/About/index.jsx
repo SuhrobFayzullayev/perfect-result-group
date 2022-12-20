@@ -12,44 +12,38 @@ const About = () => {
     {
       id: 1,
       image: cardImage,
-      title: "Consultation",
-      description:
-        "    Prototype, design, collabrate, and design systems all in Mockplus collabrate, and design systems all",
+      title: Language("CONSULTATION"),
+      description: Language("ABOUT-PAGE-SUBTITLE")
     },
     {
       id: 2,
       image: cardImage,
-      title: "Planning",
-      description:
-        "    Prototype, design, collabrate, and design systems all in Mockplus collabrate, and design systems all",
+      title: Language("PLANNING"),
+      description: Language("ABOUT-PAGE-SUBTITLE")
     },
     {
       id: 3,
       image: cardImage,
-      title: "Prototyping",
-      description:
-        "    Prototype, design, collabrate, and design systems all in Mockplus collabrate, and design systems all",
+      title:  Language("PROTOTYPING"),
+      description: Language("ABOUT-PAGE-SUBTITLE")
     },
     {
       id: 4,
       image: cardImage,
-      title: "Programming",
-      description:
-        "    Prototype, design, collabrate, and design systems all in Mockplus collabrate, and design systems all",
+      title:  Language("PROGRAMMING"),
+      description: Language("ABOUT-PAGE-SUBTITLE")
     },
     {
       id: 5,
       image: cardImage,
-      title: "Testing",
-      description:
-        "    Prototype, design, collabrate, and design systems all in Mockplus collabrate, and design systems all",
+      title:  Language("TESTING"),
+      description: Language("ABOUT-PAGE-SUBTITLE")
     },
     {
       id: 6,
       image: cardImage,
-      title: "Technical services",
-      description:
-        "    Prototype, design, collabrate, and design systems all in Mockplus collabrate, and design systems all",
+      title: Language("TECHNICAL-SERVICES"),
+      description: Language("ABOUT-PAGE-SUBTITLE")
     },
   ];
 
@@ -116,7 +110,7 @@ const About = () => {
     <>
       <Hi name={Language("ABOUT")} />
       <div className={styles.title}>
-        <h1>About Workflow</h1>
+        <h1>{Language("ABOUT-WORKFLOW")}</h1>
       </div>
       <div className={styles.wrapper}>
         <div className={styles.container}>
@@ -126,7 +120,7 @@ const About = () => {
         </div>
       </div>
       <div className={styles.title}>
-        <h1>About Team</h1>
+        <h1>{Language("ABOUT-TEAM")}</h1>
       </div>
       <div className={styles.wrapper}>
         <div className={styles.team_container}>

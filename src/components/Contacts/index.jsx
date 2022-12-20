@@ -9,6 +9,7 @@ import email from "./../../assets/icon/emailBlack.svg";
 import arrowTop from "./../../assets/icon/arrowTop.svg";
 import Name from "../ComponentName";
 import TextField from "@mui/material/TextField/TextField";
+import { Language } from "../../services/lang";
 
 const Contact = () => {
   // const { TextArea } = Input;
@@ -20,18 +21,18 @@ const Contact = () => {
   };
   return (
     <>
-      <Name id='contact' name={"Contact"} />
+      <Name id='contact' name={Language("CONTACT")} />
       <div className="contactWrapper">
         <img className="img" src={image} alt="" />
         <div className="contactColumns">
           <div>
-            <div className="contactColumnText">Leave us a message</div>
+            <div className="contactColumnText">{Language("CONTACT-MESSAGE")}</div>
             <div className="inputs">
               {/* <Inputs width={445} placeholder={"Email"} /> */}
               <TextField
                 style={{ width: "445px" }}
                 id="outlined-basic"
-                label="Email"
+                label={Language("EMAIL")}
                 variant="outlined"
               />
             </div>
@@ -39,7 +40,7 @@ const Contact = () => {
               <TextField
                 style={{ width: "445px" }}
                 id="outlined-basic"
-                label="Phone number"
+                label={Language("PHONE-NUMBER")}
                 variant="outlined"
               />
             </div>
@@ -49,13 +50,13 @@ const Contact = () => {
                 rows={5}
                 multiline
                 id="outlined-basic"
-                label="about your project"
+                label={Language("CONTACT-ABOUT-PROJECT")}
                 variant="outlined"
               />
             </div>
           </div>
           <div>
-            <div className="contactColumnText">Informative</div>
+            <div className="contactColumnText">{Language("CONTACT-INFORMATION")}</div>
             <div className="inputs">
               <Button
                 icon={location}
@@ -82,7 +83,7 @@ const Contact = () => {
                     height={38}
                     border={"none"}
                     width={"90px"}
-                  >Map</button>
+                  >{Language("MAP")}</button>
                 </a>
               </div>
             </div>
@@ -126,7 +127,7 @@ const Contact = () => {
                   border={"none"}
                   color={"white"}
                   width={445}
-                  txt={"Submit"}
+                  txt={Language("SUBMIT")}
                 />
               </div>
             </div>

@@ -7,11 +7,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
+import { Language } from "../../../../services/lang";
 function MySlider() {
   const data = [
     {
       id: 1,
-      name: "Frontend",
+      name: Language("FRONTEND"),
       office: "Ansor IT Agency",
       technology: ["Node js", "Expressjs", "Nestjs", "Git"],
       telegram: "@Ansor",
@@ -23,7 +24,7 @@ function MySlider() {
 
     {
       id: 2,
-      name: "Beckend",
+      name: Language("BACKEND"),
       office: "PDP IT Agency",
       technology: ["Node js", "Expressjs", "Nestjs", "Git"],
       telegram: "@PDP",
@@ -34,7 +35,7 @@ function MySlider() {
     },
     {
       id: 3,
-      name: "UX/UI",
+      name: Language("UX-UI"),
       office: " Aif IT Agency",
       technology: ["Figma Adobe"],
       telegram: "@Aif",
@@ -81,32 +82,32 @@ function MySlider() {
                   <div className="card">
                     <div className="card__title">{item.name}</div>
                     <div className="card__info">
-                      <strong>Office: </strong> <span>{item.office}</span>
+                      <strong>{Language("OFFICE")}: </strong> <span>{item.office}</span>
                     </div>
                     <div className="card__info">
-                      <strong>Technology: </strong>
+                      <strong>{Language("TECHNOLOGY")}: </strong>
                       <span>{item.technology.join(", ")}</span>
                     </div>
                     <div className="card__info">
-                      <strong>Telegram: </strong>
+                      <strong>{Language("TELEGRAM")}: </strong>
                       <span>{item.telegram}</span>
                     </div>
                     <div className="card__info">
-                      <strong>Area: </strong> <span>{item.area}</span>
+                      <strong>{Language("AREA")}: </strong> <span>{item.area}</span>
                     </div>
                     <div className="card__info">
-                      <strong>Application time: </strong>
+                      <strong>{Language("APPLICATION-TIME")}: </strong>
                       <span>{item.applicationTime}</span>
                     </div>
                     <div className="card__info">
-                      <strong>Working time: </strong>
+                      <strong>{Language("WORKING-TIME")}: </strong>
                       <span>
                         {item.workingTime.from} - {item.workingTime.to}{" "}
                         {item.workingTime.days}
                       </span>
                     </div>
                     <div className="card__info">
-                      <strong>Salary: </strong>
+                      <strong>{Language("SALARY")}: </strong>
                       <span>
                         {item.salary.from} - {item.salary.to}
                       </span>
