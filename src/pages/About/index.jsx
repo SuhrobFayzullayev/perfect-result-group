@@ -115,11 +115,6 @@ const About = () => {
   return (
     <>
       <Hi isAbout={true} />
-      <div>
-        <div>
-          <WorkFlow />
-        </div>
-      </div>
       <div className={styles.title}>
         <h1>About Workflow</h1>
       </div>
