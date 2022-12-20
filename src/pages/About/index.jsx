@@ -6,7 +6,7 @@ import TeamCard from "../../components/AboutCards/TeamCard";
 import WorkFlowCard from "../../components/AboutCards/WorkFlowCard";
 import Hi from "../../components/Hi/Hi";
 import WorkFlow from "../../components/WorkFlow";
-
+import { Language } from "../../services/lang";
 const About = () => {
   const data = [
     {
@@ -114,12 +114,7 @@ const About = () => {
 
   return (
     <>
-      <Hi isAbout={true} />
-      <div>
-        <div>
-          <WorkFlow />
-        </div>
-      </div>
+      <Hi name={Language("ABOUT")} />
       <div className={styles.title}>
         <h1>About Workflow</h1>
       </div>

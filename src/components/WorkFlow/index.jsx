@@ -8,6 +8,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
+import Name from "../ComponentName";
+import { Language } from "../../services/lang";
 
 const WorkFlow = () => {
   const data = [
@@ -20,7 +22,9 @@ const WorkFlow = () => {
   ];
 
   return (
-    <div className={styles.wrapper}>
+    <>
+      <Name name={Language("ABOUT-WORKFLOW")} />
+      <div className={styles.wrapper}>
         <div className={styles.slider}>
           <Swiper
             navigation
@@ -76,7 +80,8 @@ const WorkFlow = () => {
               })}
           </Swiper>
         </div>
-    </div>
+      </div>
+    </>
   );
 };
 

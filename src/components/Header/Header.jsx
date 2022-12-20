@@ -1,41 +1,54 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/icon/logo.svg";
-import {ReactComponent as NavToggle} from "../../assets/icon/sideMenu.svg";
+import { ReactComponent as NavToggle } from "../../assets/icon/sideMenu.svg";
 import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, Space } from "antd";
 import "./index.scss";
 import { HeaderTiltle } from "../HeaderTitle/HeaderTiltle";
+import { changeLanguage } from "../../services/changeLanguage";
+import { Language } from "../../services/lang";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
-
+  const language = localStorage.getItem("language");
   const items = [
     {
-      label: <a href="">EN</a>,
+      label: (
+        <p onClick={() => changeLanguage("EN")}>
+          EN
+        </p>
+      ),
       key: "0",
     },
     {
-      label: <a href="">UZ</a>,
+      label: (
+        <p onClick={() => changeLanguage("UZ")}>
+          UZ
+        </p>
+      ),
       key: "1",
     },
     {
-      label: <a href="">RU</a>,
+      label: (
+        <p onClick={() => changeLanguage("RU")}>
+          RU
+        </p>
+      ),
       key: "2",
     },
   ];
-  const location = useLocation()
-  const onHandleContact=()=>{
-    location.pathname==="/"?
-    document.documentElement.scrollTop = 2400
-    :
-    console.log("go to home");
-  }
+  const location = useLocation();
+  const onHandleContact = () => {
+    location.pathname === "/"
+      ? (document.documentElement.scrollTop = 2400)
+      : console.log("go to home");
+  };
 
   const handleMenuToggle = () => {
     setMenu((prev) => !prev);
   };
-  
+
   return (
     <header>
       <div className="header_wrapper">
@@ -47,14 +60,14 @@ const Header = () => {
         <div className="right_header">
           <nav className={menu ? "activeMenu" : ""}>
             <ul>
-                <div className="closing_icon" onClick={() => handleMenuToggle()}>
-                    <div className="image"></div>
-                </div>
-                <h1>
-                    <span>PR</span>Agency
-                </h1>
-                <HeaderTiltle />
-                {/* <div className="mobile_content">
+              <div className="closing_icon" onClick={() => handleMenuToggle()}>
+                <div className="image"></div>
+              </div>
+              <h1>
+                <span>PR</span>Agency
+              </h1>
+              <HeaderTiltle />
+              {/* <div className="mobile_content">
                     <a href="tel:+998936843757">
                     <div className="for_image">
                         <Call_icon />
@@ -91,29 +104,29 @@ const Header = () => {
               </div> */}
             </ul>
           </nav>
-            <div className="lang_dropdown">
-                <Dropdown
-                    menu={{
-                        items,
-                    }}
-                    trigger={["click"]}
-                >
-                <a onClick={(e) => e.preventDefault()}>
-                    <Space style={{ cursor: "pointer" }}>
-                        EN
-                    <DownOutlined />
-                    </Space>
-                </a>
-                </Dropdown>
-            </div>
-            {/* <a href="#!"> */}
-            <div onClick={()=>onHandleContact()} className="contact_btn">
-                <button>Contact</button>
-            </div>
-            {/* </a> */}
-            <div className="navbar_toggle" onClick={() => handleMenuToggle()}>
-                <NavToggle />
-            </div>
+          <div className="lang_dropdown">
+            <Dropdown
+              menu={{
+                items,
+              }}
+              trigger={["click"]}
+            >
+              <a onClick={(e) => e.preventDefault()}>
+                <Space style={{ cursor: "pointer" }}>
+                  {language === null ? "EN" : language }
+                  <DownOutlined />
+                </Space>
+              </a>
+            </Dropdown>
+          </div>
+          {/* <a href="#!"> */}
+          <div onClick={() => onHandleContact()} className="contact_btn">
+            <button>{Language("CONTACT")}</button>
+          </div>
+          {/* </a> */}
+          <div className="navbar_toggle" onClick={() => handleMenuToggle()}>
+            <NavToggle />
+          </div>
         </div>
       </div>
     </header>
