@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { Language } from '../../services/lang'
 import "./index.scss"
 
 export const HeaderTiltle = () => {
@@ -7,27 +8,27 @@ export const HeaderTiltle = () => {
         {
             id: 1,
             url: "/",
-            title: "Home"
+            title: Language("HOME")
         },
         {
             id: 2,
             url: "/about",
-            title: "About"
+            title: Language("ABOUT")
         },
         {
             id: 3,
             url: "/portfolio",
-            title: "Portfolio"
+            title: Language("PORTFOLIO")
         },
         {
             id: 4,
             url: "/services",
-            title: "Services"
+            title: Language("SERVICES")
         },
         {
             id: 5,
             url: "/vacancies",
-            title: "Vacancies"
+            title: Language("VACANCIES")
         },
     ]
     

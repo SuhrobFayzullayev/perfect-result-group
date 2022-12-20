@@ -3,6 +3,7 @@ import "./Hi.scss";
 import Video from "./../../assets/videos/Hi_Bg_Video.mp4";
 import circleText from "./../../assets/img/circleText.png";
 import circleTextSmall from "./../../assets/img/circleTextSmall.png";
+import { Language } from "../../services/lang";
 function Hi({ name }) {
   const data = [
     { id: 1, name: "Projects", number: "25" },
@@ -34,13 +35,9 @@ function Hi({ name }) {
 
           {String(name).toLocaleLowerCase() === "home" && (
             <div className="title__descr">
-              <div className="title__descr-title">
-                QUALITY AND FAST SITE WITH US
-              </div>
+              <div className="title__descr-title">{Language("MAIN-TITLE")}</div>
               <p className="title__descr-paragraph">
-                "PR" company aims to create a highly competitive IT company in
-                the main market that focuses on its customers and creates
-                favorable conditions for cooperation.
+                {Language("MAIN-SUBTITLE")}
               </p>
               {width > 560 && (
                 <div className="title__descr-decor">
